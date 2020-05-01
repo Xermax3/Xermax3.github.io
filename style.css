@@ -8,6 +8,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     /* background: black; */
     background: linear-gradient(45deg, #df7334, #c72ba5, #1d37cc, #22ac6c);
@@ -29,13 +31,13 @@ h2 {
 }
 
 h3 {
+    margin-bottom: 15px;
     font-weight: 700;
     font-size: 30px;
-    line-height: 1;
+    line-height: 1.2;
 }
 
 p {
-    margin: 15px 0;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.4;
@@ -76,6 +78,7 @@ nav a:hover {
 main {
     display: flex;
     justify-content: center;
+    flex: 1;
     background-color: rgba(180, 220, 235, 0.8);
     /* background-color: rgba(180, 220, 235, 0.6); */
 }
@@ -87,30 +90,126 @@ main {
     /* background-color: rgba(180, 220, 235, 0.4); */
 }
 
-#main-width-limit-influences {
-    padding: 40px 80px;
-    padding-bottom: 10px;
-    /* background-color: rgba(180, 220, 235, 0.4); */
-}
-
-
 #page-title {
     text-align: center;
 }
 
-.picture-on-side {
+footer {
     display: flex;
+    justify-content: center;
+    align-content: bottom;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-bottom: 10px;
+    background-color: rgba(180, 220, 235, 0.15);
 }
 
-.picture-on-side img {
-    margin: 20px 0;
-    margin-left: 20px;
-    max-width: 300px;
+.social-media-divide {
+    display: flex;
+    justify-content: center;
+    align-content: bottom;
+    margin-bottom: 10px;
+}
+
+.social-media-link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.social-media-link img {
+    height: 1.2em;
+    filter: brightness(0) invert(1);
+    margin-right: 10px;
+}
+
+.social-media-link:hover img {
+    filter: none;
+}
+
+#sm-roblox:hover {
+    color: rgb(217, 24, 0);
+}
+
+#sm-discord:hover {
+    color: rgb(95, 108, 195)
+}
+
+#sm-twitter:hover {
+    color: rgb(60, 170, 247)
+}
+
+#sm-youtube:hover {
+    color: rgb(244, 0, 0)
+}
+
+#sm-twitch:hover {
+    color: rgb(102, 59, 186)
+}
+
+/* For moving background */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+/* Specific to index.html */
+#bio-grid {
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    grid-template-columns: auto auto 40%;
+    grid-template-areas:
+        "one one img"
+        "two two img"
+        "thr thr img"
+        "fou fou fou";
+}
+
+#bio-paragraph-1 {
+    grid-area: one;
+}
+
+#bio-paragraph-2 {
+    grid-area: two;
+}
+
+#bio-paragraph-3 {
+    grid-area: thr;
+}
+
+#bio-paragraph-4 {
+    grid-area: fou;
+}
+
+#bio-image-container {
+    grid-area: img;
+}
+
+#bio-image-container img {
+    height: 100%;
+    width: 100%;
+    min-width: 150px;
     object-fit: cover;
 }
 
 .index-section {
     margin: 30px 0;
+}
+
+.index-section ul {
+    margin: 15px 0;
 }
 
 .index-section li {
@@ -206,6 +305,13 @@ main {
 }
 
 
+/* Specific to influences.html */
+#main-width-limit-influences {
+    padding: 40px 80px;
+    padding-bottom: 10px;
+    /* background-color: rgba(180, 220, 235, 0.4); */
+}
+
 #influences-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -216,19 +322,18 @@ main {
 .influence {
     margin: 20px;
     padding: 10px;
-    padding-bottom: 0;
     background-color: rgba(0,0,0, 0.1);
 }
 
 .influence img {
-    height: 350px;
+    height: 25vw;
     width: 100%;
     object-fit: cover;
 }
 
 
+/* Specific to contact.html */
 form {
-    /* width: 100%; */
     margin-bottom: 30px;
 }
 
@@ -236,7 +341,6 @@ form {
     display: flex;
     flex-direction: column;
     margin: 20px;
-    /* width: 100%; */
 }
 
 .input-label {
@@ -252,7 +356,7 @@ input:not([type=radio]), textarea, select, option {
     font-family: inherit;
     font-size: inherit;
     padding: 5px;
-    width: 400px;
+    width: 380px;
 }
 
 input:focus, textarea:focus, select:focus, option:focus {
@@ -273,69 +377,130 @@ input[type=submit]:hover {
 }
 
 
-footer {
-    display: flex;
-    justify-content: center;
-    align-content: bottom;
-    flex-wrap: wrap;
-    padding: 20px;
-    background-color: rgba(180, 220, 235, 0.15);
+/* For Desktop */
+@media screen and (max-width: 1200px) {
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        padding-bottom: 15px;
+        text-align: center;
+    }
 }
 
-footer div {
-    display: flex;
-    justify-content: center;
-    align-content: bottom;
+/* For Smaller Desktop */
+@media screen and (max-width: 1024px) {
+    #main-width-limit-influences {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
-.social-media-link {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    margin: 0 30px;
-    font-weight: 500;
-    font-size: 18px;
+/* For Tablet */
+@media screen and (max-width: 768px) {
+    #main-width-limit {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .social-media-link {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .project-grid {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .project-grid::before {
+        padding-bottom: 150px;
+    }
+
+    #influences-grid {
+        grid-template-columns: none;
+    }
+
+    .influence img {
+        height: 50%;
+    }
 }
 
-.social-media-link img {
-    height: 1.2em;
-    filter: brightness(0) invert(1);
-    margin-right: 10px;
+/* Adjustements */
+@media screen and (max-width: 660px) {
+    h1 {
+        font-size: 46px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    .social-media-link {
+        font-size: 14px;
+    }
+
+    #bio-grid {
+        grid-template-columns: auto auto 50%;
+        grid-template-areas:
+            "one one img"
+            "two two img"
+            "thr thr thr"
+            "fou fou fou";
+    }
+
+    .influence img {
+        min-height: 300px;
+    }
 }
 
-.social-media-link:hover img {
-    filter: none;
-}
+/* For Mobile */
+@media screen and (max-width: 480px) {   
+    #main-width-limit {
+        width: 100%;
+    }
 
-#sm-roblox:hover {
-    color: rgb(217, 24, 0);
-}
+    footer {
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
 
-#sm-discord:hover {
-    color: rgb(95, 108, 195)
-}
+    .social-media-divide {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
 
-#sm-twitter:hover {
-    color: rgb(60, 170, 247)
-}
+    .social-media-link {
+        margin-bottom: 10px;
+    }
 
-#sm-youtube:hover {
-    color: rgb(244, 0, 0)
-}
+    #bio-grid {
+        grid-template-columns: auto auto 50%;
+        grid-template-areas:
+            "one one one"
+            "img img img"
+            "two two two"
+            "thr thr thr"
+            "fou fou fou";
+    }
 
-#sm-twitch:hover {
-    color: rgb(102, 59, 186)
-}
+    .influence {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-/* For moving background */
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    input:not([type=radio]), textarea, select, option {
+        width: 100%;
+    }
 }
