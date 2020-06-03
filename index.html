@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home • Maxence Roy's GitHub Page</title>
+    <link rel="shortcut icon" href="./Assets/Favicon.png">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -12,17 +13,23 @@
     <header>
         <h1>Maxence Roy</h1>
         <nav>
-            <a class="current-nav" href="./index.html">Home</a>
-            <a href="https://github.com/Xermax3" target="_blank">GitHub</a>
-            <a href="./influences.html">Influences</a>
-            <a href="./contact.html">Contact</a>
+            <a class="navbar-head" href="./index.html">Home</a>
+            <a class="navbar-head" href="https://github.com/Xermax3" target="_blank">GitHub</a>
+            <div class="navbar-dropdown">
+                <div class="navbar-head">Projects</div>
+                <div class="navbar-dropdown-content">
+                    <a class="navbar-dropdown-opt" href="./proj-rblx.html">Roblox</a>
+                    <a class="navbar-dropdown-opt" href="./proj-schl.html">School</a>
+                    <a class="navbar-dropdown-opt" href="./proj-misc.html">Misc.</a>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <div id="main-width-limit">
             <h2 id="page-title">Welcome to my GitHub page, buckaroo!</h2>
             <section class="index-section">
-                <h3>Who's this?</h3>
+                <h3 class="index-section-title">Who's this?</h3>
                 <div id="bio-grid">
                     <p id="bio-paragraph-1">
                         Hello there! My name's <strong>Maxence Roy</strong>, also known as <strong>"Xermax"</strong> across various platforms.
@@ -49,67 +56,118 @@
                         Microsoft Excel to follow and visualize my daily tendencies. Outside of computer science, I 
                         enjoy skiing with friends. On top of that, I have a passion for both competitive and cooperative 
                         card / board games. From time to time, I like to edit videos to create entertaining compilations.
-                    </p> 
-                    <div id="bio-image-container"><img src="./Assets/MaxenceProfile.JPG" title="That's me!"></div>
+                    </p>
+                    <div id="bio-slideshow">
+                        <div id="bio-slideshow-images-container" ontouchmove="scrollSlides()" onscroll="scrollSlides()">
+                            <img class="bio-slide" src="./Assets/Index/Slideshow/Slide_1.jpg" title="That's me!">
+                            <img class="bio-slide" src="./Assets/Index/Slideshow/Slide_2.jpg" title="That's me!">
+                            <img class="bio-slide" src="./Assets/Index/Slideshow/Slide_3.jpg" title="That's me!">
+                            <img class="bio-slide" src="./Assets/Index/Slideshow/Slide_4.jpg" title="That's me!">
+                            <img class="bio-slide" src="./Assets/Index/Slideshow/Slide_5.jpg" title="That's me!">
+                        </div>
+                        <div id="bio-slideshow-buttons-container">
+                            <button id="bio-slideshow-button-focus" class="bio-slideshow-button" onclick="showSlide(0, true)"></button>
+                            <button class="bio-slideshow-button" onclick="showSlide(1, true)"></button>
+                            <button class="bio-slideshow-button" onclick="showSlide(2, true)"></button>
+                            <button class="bio-slideshow-button" onclick="showSlide(3, true)"></button>
+                            <button class="bio-slideshow-button" onclick="showSlide(4, true)"></button>
+                        </div> 
+                    </div>
                 </div>
             </section>
             <section class="index-section">
-                <h3>Languages</h3>
+                <h3 class="index-section-title">Languages</h3>
                 <p>
                     My first programming language was Lua, which is used to make Roblox games. Recently, 
                     I've been learning many new languages and I'm trying to make fun projects with each one.
+                </p>                
+                <p>
+                    <ul>
+                        <li>Lua (since 2014)</li>
+                        <li>C# (since 2019)</li>
+                        <li>Microsoft PowerShell (since 2019)</li>
+                        <li>HTML / CSS / JavaScript (since 2020)</li>
+                        <li>Python (since 2020)</li>
+                    </ul>
                 </p>
-                <ul>
-                    <li>Lua (since 2014)</li>
-                    <li>C# (since 2019)</li>
-                    <li>Microsoft PowerShell (since 2019)</li>
-                    <li>HTML / CSS / JavaScript (since 2020)</li>
-                    <li>Python (since 2020)</li>
-                </ul>
-                <p>Coming soon: C++</p>
             </section>
             <section class="index-section" id="project-section">
-                <h3>Check Out My&nbsp;Projects!</h3>
+                <h3 class="index-section-title">Check Out My&nbsp;Projects!</h3>
                 <div class="project-grid">
                     <div class="project-container">
-                        <a class="project-icon" id="project-pers-icon" href="#">Personal Projects</a>
+                        <a class="project-icon" id="project-pers-icon" href="#">
+                            Roblox Stuff
+                        </a>
                     </div>
                     <div class="project-container">
-                        <a class="project-icon" id="project-schl-icon" href="#">School Projects</a>
+                        <a class="project-icon" id="project-schl-icon" href="./proj-schl.html">
+                            School Projects
+                        </a>
                     </div>
                     <div class="project-container">
-                        <a class="project-icon" id="project-misc-icon" href="#">Miscellaneous</a>
+                        <a class="project-icon" id="project-misc-icon" href="#">
+                            Miscellaneous
+                        </a>
                     </div>
                 </div>
             </section>
         </div>
     </main>
     <footer>
-        <div class="social-media-divide">
-            <a id="sm-roblox" class="social-media-link" href="https://www.roblox.com/users/23865788/profile" target="_blank">
-                <img src="./Assets/SocialMedia/SM_Roblox.svg"></img>
-                Xermax
-            </a>
-            <a id="sm-discord" class="social-media-link" href="https://discordapp.com/" target="_blank">
-                <img src="./Assets//SocialMedia/SM_Discord.svg"></img>
-                Xermax#4765
-            </a>
-            <a id="sm-twitter" class="social-media-link" href="https://twitter.com/Xermax_" target="_blank"> 
-                <img src="./Assets//SocialMedia/SM_Twitter.svg"></img>
-                Xermax_
-            </a>
-        </div>
-        <div class="social-media-divide">
-            <a id="sm-youtube" class="social-media-link" href="https://www.youtube.com/channel/UCxHnQd4SLGhstcE45lpod0w" target="_blank">
-                <img src="./Assets/SocialMedia/SM_YouTube.svg"></img>
-                Xermax
-            </a>
-            <a id="sm-twitch" class="social-media-link" href="https://www.twitch.tv/xermax3" target="_blank">
-                <img src="./Assets/SocialMedia/SM_Twitch.svg"></img>
-                xermax3
-            </a>
-            </div>
+        <a id="sm-github" class="social-media-link" href="https://github.com/Xermax3" target="_blank">
+            <img src="./Assets/SocialMedia/SM_GitHub.svg"></img>
+            Xermax3
+        </a>
+        <a id="sm-roblox" class="social-media-link" href="https://www.roblox.com/users/23865788/profile" target="_blank">
+            <img src="./Assets/SocialMedia/SM_Roblox.svg"></img>
+            Xermax
+        </a>
+        <a id="sm-twitter" class="social-media-link" href="https://twitter.com/Xermax_" target="_blank"> 
+            <img src="./Assets//SocialMedia/SM_Twitter.svg"></img>
+            Xermax_
+        </a>
     </footer>
+
+    <script>
+        const autoScrollDelay = 10000;
+
+        let slidesContainer = document.getElementById("bio-slideshow-images-container")
+        let buttons = document.getElementsByClassName('bio-slideshow-button');
+        let slides = document.getElementsByClassName("bio-slide");
+        let slideFocusNum = 0;
+        let autoScrollTimer = window.setInterval(autoScroll, autoScrollDelay);
+        console.log('INIT');
+
+        slidesContainer.scrollLeft = 0;
+
+        function updateTimer(slideNum) {
+            window.clearInterval(autoScrollTimer);
+            autoScrollTimer = window.setInterval(autoScroll, autoScrollDelay);
+        }
+
+        function showSlide(slideNum, updateTime) {
+            if (updateTime) {
+                updateTimer(slideNum);
+            }
+            slideFocusNum = slideNum;
+            let slidePos = slides[slideFocusNum].offsetLeft;
+            slidesContainer.scrollLeft = slidePos;
+        }
+
+        function scrollSlides() {
+            let pos = slidesContainer.scrollLeft;
+            let slideLength = slidesContainer.scrollWidth / slides.length;
+            let slideNum = Math.floor((pos + (slideLength / 2)) / slideLength);
+            buttons[slideFocusNum].removeAttribute("id");
+            updateTimer(slideNum);
+            slideFocusNum = slideNum;
+            buttons[slideFocusNum].id = 'bio-slideshow-button-focus';
+        }
+
+        function autoScroll() {
+            showSlide((slideFocusNum + 1) % slides.length, false);
+        }
+    </script>
 </body>
 
 </html>
