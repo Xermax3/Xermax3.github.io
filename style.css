@@ -17,25 +17,31 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* background: black; */  
-    background-size: 400% 400%;
-    animation: gradient 30s ease infinite;
+    /* background: black; */
 }
 
 #body-index {
     background: linear-gradient(45deg, #df7334, #c72ba5, #1d37cc, #22ac6c);
+    animation: gradient 30s ease infinite;
+    background-size: 400% 400%;
 }
 
 #body-proj-rblx {
-    background: #D34F6D;
+    background: linear-gradient(45deg, #df7334, #c72ba5);
+    animation: gradient 30s ease infinite;
+    background-size: 400% 400%;
 }
 
 #body-proj-schl {
-    background: #7231B9;
+    background: linear-gradient(45deg, #c72ba5, #1d37cc);
+    animation: gradient 30s ease infinite;
+    background-size: 400% 400%;
 }
 
 #body-proj-misc {
-    background: #20729C;
+    background: linear-gradient(45deg, #1d37cc, #22ac6c);
+    animation: gradient 30s ease infinite;
+    background-size: 400% 400%;
 }
 
 h1 {
@@ -546,8 +552,8 @@ input[type=submit]:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 0 34px 10px;
-    padding: 10px 0 20px;
+    margin: 0 34px 35px;
+    padding: 10px 0 35px;
     border-bottom: 1px solid white;
 }
 
@@ -562,11 +568,12 @@ input[type=submit]:hover {
     margin-bottom: 10px;
 }
 
-.project-thumbnail video {
+.project-thumbnail {
     object-fit: cover;
     object-position: top;
     width: 100%;
     max-height: 500px;
+    margin-bottom: 5px;
 }
 
 .project-tags {
@@ -589,6 +596,11 @@ input[type=submit]:hover {
     background-color: rgb(210, 220, 0);
 }
 
+.project-tag-team::before {
+    content: "Team Project";
+    background-color: rgb(100, 225, 180);
+}
+
 .project-tag-web::before {
     content: "HTML / CSS / JavaScript";
     background-color: purple;
@@ -602,7 +614,7 @@ input[type=submit]:hover {
 .explore-button, .download-button {
     flex: 0 0 auto;
     margin: 0 30px;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 12px 40px;
     border-radius: 30px;
     width: 200px;
