@@ -17,10 +17,25 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* background: black; */
-    background: linear-gradient(45deg, #df7334, #c72ba5, #1d37cc, #22ac6c);
+    /* background: black; */  
     background-size: 400% 400%;
     animation: gradient 30s ease infinite;
+}
+
+#body-index {
+    background: linear-gradient(45deg, #df7334, #c72ba5, #1d37cc, #22ac6c);
+}
+
+#body-proj-rblx {
+    background: #D34F6D;
+}
+
+#body-proj-schl {
+    background: #7231B9;
+}
+
+#body-proj-misc {
+    background: #20729C;
 }
 
 h1 {
@@ -545,6 +560,13 @@ input[type=submit]:hover {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+}
+
+.project-thumbnail video {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    max-height: 500px;
 }
 
 .project-tags {
