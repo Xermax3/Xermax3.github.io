@@ -275,7 +275,7 @@ footer {
 
 .bio-slide {
     width: 100%;
-    border: 0 solid black;
+    border-radius: 30px;
     object-fit: cover;
     scroll-snap-align: start;
     position: relative;
@@ -358,7 +358,7 @@ footer {
 
 .project-container {
     margin: 15px;
-    border-radius: 80px;
+    border-radius: 60px;
     overflow: hidden;
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
@@ -419,83 +419,6 @@ footer {
 
 #project-misc-icon {
     background-image: url(./Assets/Index/ProjectIcons/Misc_Icon.png);
-}
-
-
-/* Specific to influences.html */
-#main-width-limit-influences {
-    padding: 40px 80px;
-    padding-bottom: 10px;
-    /* background-color: rgba(var(--bg-color), 0.4); */
-}
-
-#influences-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-.influence {
-    margin: 20px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.influence img {
-    height: 25vw;
-    width: 100%;
-    object-fit: cover;
-}
-
-
-/* Specific to contact.html */
-form {
-    margin-bottom: 30px;
-}
-
-.form-entry {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-}
-
-.input-label {
-    font-weight: 500;
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-input:not([type=radio]), textarea, select, option {
-    color: rgba(0, 0, 0, 0.9);
-    background-color: rgb(var(--text-color));
-    border: none;
-    font-family: inherit;
-    font-size: inherit;
-    padding: 5px;
-    width: 380px;
-}
-
-input[type=radio] {
-    cursor: pointer;
-}
-
-input:focus, textarea:focus, select:focus, option:focus {
-    outline: none;
-}
-
-textarea {
-    resize: none;
-}
-
-input[type=submit] {
-    cursor: pointer;
-    width: 140px;
-    background-color: #eeeeee;
-}
-
-input[type=submit]:hover {
-    background-color: #dddddd;
 }
 
 
