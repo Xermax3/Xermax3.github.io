@@ -219,47 +219,18 @@ footer {
 
 
 /* Specific to index.html */
-#bio-grid {
-    display: grid;
-    grid-row-gap: 15px;
-    grid-column-gap: 15px;
-    grid-template-columns: auto auto 40%;
-    grid-template-areas:
-        "one one img"
-        "two two img"
-        "thr thr img"
-        "fou fou fou";
-}
-
-#bio-paragraph-1 {
-    grid-area: one;
-}
-
-#bio-paragraph-2 {
-    grid-area: two;
-}
-
-#bio-paragraph-3 {
-    grid-area: thr;
-}
-
-#bio-paragraph-4 {
-    grid-area: fou;
-}
-
-#bio-slideshow {
-    grid-area: img;
-}
-
 #bio-slideshow {
     position: relative;
     height: 100%;
     width: 100%;
     min-width: 150px;
+    max-width: 360px;
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
 }
 
 #bio-slideshow-images-container {
-    height: 100%;
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -303,6 +274,10 @@ footer {
 .bio-slideshow-button:hover, #bio-slideshow-button-focus {
     border-width: 0;
     background-color: rgba(var(--text-color), 0.6);
+}
+
+.bio-paragraph {
+    margin-bottom: 15px;
 }
 
 .index-section {
@@ -360,10 +335,10 @@ footer {
     margin: 15px;
     border-radius: 60px;
     overflow: hidden;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -o-transition: all .4s;
-    transition: all .4s;
+    -webkit-transition: transform .4s, filter .4s;
+    -moz-transition: transform .4s, filter .4s;
+    -o-transition: transform .4s, filter .4s;
+    transition: transform .4s, filter .4s;
 }
 
 .project-icon {
@@ -382,10 +357,10 @@ footer {
     text-shadow: 1px 0 0 #00000080, 0 -1px 0 #00000080, 0 1px 0 #00000080, -1px 0 0 #00000080;
     font-size: 22px;
     font-weight: 700;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -o-transition: all .4s;
-    transition: all .4s;
+    -webkit-transition: transform .4s, filter .4s;
+    -moz-transition: transform .4s, filter .4s;
+    -o-transition: transform .4s, filter .4s;
+    transition: transform .4s, filter .4s;
 }
 
 .project-container:hover {
@@ -424,7 +399,14 @@ footer {
 
 /* Specific to project pages */
 .project-collection-collapsible {
-    transition: all 0.25s ease-out;
+    -webkit-transition: transform 0.25s ease-out;
+    -moz-transition: transform 0.25s ease-out;
+    -o-transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out;
+}
+
+.project-collection-collapsible:first-of-type {
+    margin-top: 30px;
 }
 
 .project-collection-toggle {
@@ -433,7 +415,7 @@ footer {
 
 .project-collection-head {
     cursor: pointer;
-    font-size: 2.6rem;
+    font-size: 40px;
     font-weight: 700;
 }
 
@@ -451,7 +433,14 @@ footer {
     border-left: 15px solid currentColor;
   
     margin-right: 20px;
+    -ms-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
     transform: translateY(-2px);
+    -webkit-transition: transform .2s ease-out;
+    -moz-transition: transform .2s ease-out;
+    -o-transition: transform .2s ease-out;
     transition: transform .2s ease-out;
 }
 
@@ -464,9 +453,12 @@ footer {
 }
 
 .project-collection {
-    margin-bottom: 20px;
+    margin: 0 35px 20px;
     max-height: 0px;
     overflow: hidden;
+    -webkit-transition: max-height .25s ease-in-out;
+    -moz-transition: max-height .25s ease-in-out;
+    -o-transition: max-height .25s ease-in-out;
     transition: max-height .25s ease-in-out;
 }
 
@@ -475,7 +467,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 0 34px 35px;
+    margin-bottom: 35px;
     padding: 10px 0 35px;
     border-bottom: 1px solid white;
 }
@@ -489,6 +481,7 @@ footer {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .project-thumbnail {
@@ -544,7 +537,10 @@ footer {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 600;
-    transition: all .2s ease-out;
+    -webkit-transition: background-color .2s ease-out;
+    -moz-transition: background-color .2s ease-out;
+    -o-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
 }
 
 .explore-button {
@@ -573,14 +569,6 @@ footer {
     header h1 {
         padding-bottom: 15px;
         text-align: center;
-    }
-}
-
-/* For Smaller Desktop */
-@media screen and (max-width: 1024px) {
-    #main-width-limit-influences {
-        padding-left: 20px;
-        padding-right: 20px;
     }
 }
 
@@ -622,17 +610,17 @@ footer {
         background-image: url(./Assets/Index/ProjectIcons/Misc_Icon_Hor.png);
     }
 
-    #influences-grid {
-        grid-template-columns: none;
+    .project-title {
+        flex-direction: column;
     }
 
-    .influence img {
-        height: 50%;
+    .project-tags *:first-child::before {
+        margin-left: 0;
     }
 }
 
-/* Adjustements */
-@media screen and (max-width: 660px) {
+/* For Mobile */
+@media screen and (max-width: 480px) {   
     h1 {
         font-size: 46px;
     }
@@ -651,24 +639,13 @@ footer {
         font-size: 16px;
     }
 
-    #bio-grid {
-        grid-template-columns: auto auto 50%;
-        grid-template-areas:
-            "one one img"
-            "two two img"
-            "thr thr thr"
-            "fou fou fou";
+    .navbar-dropdown-content {
+        margin-left: 5px;
+        margin-top: 0;
     }
 
-    .influence img {
-        min-height: 300px;
-    }
-}
-
-/* For Mobile */
-@media screen and (max-width: 480px) {   
-    #main-width-limit {
-        width: 100%;
+    .navbar-dropdown-opt {
+        font-size: 14px;
     }
 
     footer {
@@ -685,22 +662,31 @@ footer {
         font-size: 16px;
     }
 
-    #bio-grid {
-        grid-template-columns: auto auto 50%;
-        grid-template-areas:
-            "one one one"
-            "img img img"
-            "two two two"
-            "thr thr thr"
-            "fou fou fou";
+    #bio-slideshow {
+        min-width: none;
+        max-width: none;
+        float: none;
+        margin-left: 0;
+        margin-bottom: 15px;
     }
 
-    .influence {
+    .project-collection-head {
+        font-size: 34px;
+    }
+
+    .project-collection {
         margin-left: 0;
         margin-right: 0;
     }
 
-    input:not([type=radio]), textarea, select, option {
-        width: 100%;
+    .project-collection-head::before {       
+        /* Arrow */
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid currentColor;
+    }
+
+    .project-tags {
+        margin-top: 5px;
     }
 }
