@@ -31,20 +31,20 @@
             <section class="index-section">
                 <h3 class="index-section-title">Who's this?</h3>
                 <div id="bio-grid">
-                    <div id="bio-slideshow">
-                        <div id="bio-slideshow-images-container" ontouchmove="scrollSlides()" onscroll="scrollSlides()">
-                            <img class="bio-slide" src="./Assets/Index/Slideshow/Slide_1.jpg" title="That's me!">
-                            <img class="bio-slide" src="./Assets/Index/Slideshow/Slide_2.jpg" title="It is I!">
-                            <img class="bio-slide" src="./Assets/Index/Slideshow/Slide_3.jpg" title="A picture of yours truly!">
-                            <img class="bio-slide" src="./Assets/Index/Slideshow/Slide_4.jpg" title="This is Maxence Roy (me)!">
-                            <img class="bio-slide" src="./Assets/Index/Slideshow/Slide_5.jpg" title="Surprise: it's me!">
+                    <div id="bio-slideshow" class="slideshow">
+                        <div class="slideshow-container" ontouchmove="scrollSlides(0)" onscroll="scrollSlides(0)">
+                            <img class="slide" src="./Assets/Index/Slideshow/Slide_1.jpg">
+                            <img class="slide" src="./Assets/Index/Slideshow/Slide_2.jpg">
+                            <img class="slide" src="./Assets/Index/Slideshow/Slide_3.jpg">
+                            <img class="slide" src="./Assets/Index/Slideshow/Slide_4.jpg">
+                            <img class="slide" src="./Assets/Index/Slideshow/Slide_5.jpg">
                         </div>
-                        <div id="bio-slideshow-buttons-container">
-                            <button id="bio-slideshow-button-focus" class="bio-slideshow-button" onclick="showSlide(0, true)"></button>
-                            <button class="bio-slideshow-button" onclick="showSlide(1, true)"></button>
-                            <button class="bio-slideshow-button" onclick="showSlide(2, true)"></button>
-                            <button class="bio-slideshow-button" onclick="showSlide(3, true)"></button>
-                            <button class="bio-slideshow-button" onclick="showSlide(4, true)"></button>
+                        <div class="slideshow-buttons-container">
+                            <button class="slideshow-button slideshow-button-focus" onclick="showSlide(0, 0, true)"></button>
+                            <button class="slideshow-button" onclick="showSlide(0, 1, true)"></button>
+                            <button class="slideshow-button" onclick="showSlide(0, 2, true)"></button>
+                            <button class="slideshow-button" onclick="showSlide(0, 3, true)"></button>
+                            <button class="slideshow-button" onclick="showSlide(0, 4, true)"></button>
                         </div> 
                     </div>
                     <p class="bio-paragraph">
@@ -128,46 +128,7 @@
         </a>
     </footer>
 
-    <script>
-        const autoScrollDelay = 10000;
-
-        let slidesContainer = document.getElementById("bio-slideshow-images-container")
-        let buttons = document.getElementsByClassName('bio-slideshow-button');
-        let slides = document.getElementsByClassName("bio-slide");
-        let slideFocusNum = 0;
-        let autoScrollTimer = window.setInterval(autoScroll, autoScrollDelay);
-        console.log('INIT');
-
-        slidesContainer.scrollLeft = 0;
-
-        function updateTimer(slideNum) {
-            window.clearInterval(autoScrollTimer);
-            autoScrollTimer = window.setInterval(autoScroll, autoScrollDelay);
-        }
-
-        function showSlide(slideNum, updateTime) {
-            if (updateTime) {
-                updateTimer(slideNum);
-            }
-            slideFocusNum = slideNum;
-            let slidePos = slides[slideFocusNum].offsetLeft;
-            slidesContainer.scrollLeft = slidePos;
-        }
-
-        function scrollSlides() {
-            let pos = slidesContainer.scrollLeft;
-            let slideLength = slidesContainer.scrollWidth / slides.length;
-            let slideNum = Math.floor((pos + (slideLength / 2)) / slideLength);
-            buttons[slideFocusNum].removeAttribute("id");
-            updateTimer(slideNum);
-            slideFocusNum = slideNum;
-            buttons[slideFocusNum].id = 'bio-slideshow-button-focus';
-        }
-
-        function autoScroll() {
-            showSlide((slideFocusNum + 1) % slides.length, false);
-        }
-    </script>
+    <script src="./slideshow.js"></script>
 </body>
 
 </html>

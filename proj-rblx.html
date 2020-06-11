@@ -29,8 +29,174 @@
     <main>
         <div id="main-width-limit">
             <h2 id="page-title">Roblox Projects</h2>
+            <p>
+                For those who aren't familiar with it, Roblox is a free online platform that hosts games made by 
+                its users. It is essentially a game engine that provides servers for people to play your games.
+                Roblox is what inspired me to get into programming and because of it I've met a lot of great people. 
+                Although I haven't really released a full game since 2014, I'm still somewhat active on the platform. 
+                Feel free to check out 
+                <a class="inline-link" href="https://www.roblox.com/users/23865788/profile" target="_blank">my&nbsp;profile</a>!
+                Note that if you want to try out the games, you'll need install Roblox on your computer.
+            </p>
 
-            <h3>Nothing to show here (yet)!</h3>
+            <section class="project-collection-collapsible">
+                <input id="current" class="project-collection-toggle" type="checkbox">
+                <label for="current" class="project-collection-head">In Progress</label>
+                <div class="project-collection">
+                    <article class="project">
+                        <div class="project-content">
+                            <div class="project-title">
+                                <h3>Quad Quests</h3>
+                                <div class="project-tags"></div>
+                            </div>
+                            <div class="project-thumbnail slideshow">
+                                <div class="slideshow-container" ontouchmove="scrollSlides(0)" onscroll="scrollSlides(0)">
+                                    <img class="slide" src="./Assets/Thumbnails/QQ_Screenshot1.png">
+                                    <img class="slide" src="./Assets/Thumbnails/QQ_Screenshot2.png">
+                                    <img class="slide" src="./Assets/Thumbnails/QQ_Screenshot3.png">
+                                    <img class="slide" src="./Assets/Thumbnails/QQ_Screenshot4.png">
+                                    <img class="slide" src="./Assets/Thumbnails/QQ_Screenshot5.png">
+                                </div>
+                                <div class="slideshow-buttons-container">
+                                    <button class="slideshow-button slideshow-button-focus" onclick="showSlide(0, 0, true)"></button>
+                                    <button class="slideshow-button" onclick="showSlide(0, 1, true)"></button>
+                                    <button class="slideshow-button" onclick="showSlide(0, 2, true)"></button>
+                                    <button class="slideshow-button" onclick="showSlide(0, 3, true)"></button>
+                                    <button class="slideshow-button" onclick="showSlide(0, 4, true)"></button>
+                                </div> 
+                            </div>
+                            <p>
+                                A 4-player cooperative game where each player picks a character with an unique
+                                set of attributes and powers. With their respective traits, they try to reach
+                                various goals and collect loot.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <div class="project-content">
+                            <div class="project-title">
+                                <h3>"The Legend of Max 2" Revamp</h3>
+                                <div class="project-tags"></div>
+                            </div>
+                            <div class="project-thumbnail slideshow">
+                                <div class="slideshow-container" ontouchmove="scrollSlides(1)" onscroll="scrollSlides(1)">
+                                    <img class="slide" src="./Assets/Thumbnails/TLoM2R_Screenshot1.png">
+                                    <img class="slide" src="./Assets/Thumbnails/TLoM2R_Screenshot2.png">
+                                    <img class="slide" src="./Assets/Thumbnails/TLoM2R_Screenshot3.png">
+                                </div>
+                                <div class="slideshow-buttons-container">
+                                    <button class="slideshow-button slideshow-button-focus" onclick="showSlide(1, 0, true)"></button>
+                                    <button class="slideshow-button" onclick="showSlide(1, 1, true)"></button>
+                                    <button class="slideshow-button" onclick="showSlide(1, 2, true)"></button>
+                                </div> 
+                            </div>
+                            <p>
+                                The Legend of Max 2 was a game I released in early 2014 inspired by "The Legend of Zelda"
+                                series. Due to updates, it broke a few years ago. So, I've been fixing it, polishing
+                                certain aspects, and adding a few new features. The game was originally single-player, but
+                                with this revamp players will be able to play among others.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="project-collection-collapsible">
+                <input id="pre2016" class="project-collection-toggle" type="checkbox">
+                <label for="pre2016" class="project-collection-head">Before 2016</label>
+                <div class="project-collection">
+                    <div class="cringe-warning"></div>
+                    <article class="project">
+                        <div class="project-content">
+                            <div class="project-title">
+                                <h3>Max Adventure 3</h3>
+                                <div class="project-tags"></div>
+                            </div>
+                            <div class="project-thumbnail slideshow">
+                                <div class="slideshow-container" ontouchmove="scrollSlides(2)" onscroll="scrollSlides(2)">
+                                    <img class="slide" src="./Assets/Thumbnails/MA3_Thumbnail.png">
+                                    <img class="slide" src="./Assets/Thumbnails/MA3_Screenshot1.png">
+                                    <img class="slide" src="./Assets/Thumbnails/MA3_Screenshot2.png">
+                                    <img class="slide" src="./Assets/Thumbnails/MA3_Screenshot3.png">
+                                </div>
+                                <div class="slideshow-buttons-container">
+                                    <button class="slideshow-button slideshow-button-focus" onclick="showSlide(2, 0, true)"></button>
+                                    <button class="slideshow-button" onclick="showSlide(2, 1, true)"></button>
+                                    <button class="slideshow-button" onclick="showSlide(2, 2, true)"></button>
+                                    <button class="slideshow-button" onclick="showSlide(2, 3, true)"></button>
+                                </div> 
+                            </div>
+                            <p>
+                                My most "well-known" and latest game (released in October 2014...).
+                                Max Adventure 3 was yet another "collectathon"  adventure game, where you go through 
+                                a bunch of worlds to collect stuff and unlock powers. This game in particular was
+                                heavily inspired by Donkey Kong 64. I remember it being very fun to make.
+                                It gathered around 5k players after a few months, and some small YouTube channels even 
+                                recorded themselves playing it. Automatic updates caused it to break around 2017, 
+                                but I'm hoping to revamp it in the near future.
+                            </p>
+                        </div>
+                        <a class="explore-button" href="https://www.roblox.com/games/170545797/Old-Games-Place" target="_blank">Explore</a>
+                    </article>
+                    <article class="project">
+                        <div class="project-content">
+                            <div class="project-title">
+                                <h3>The Legend of Max 2</h3>
+                                <div class="project-tags"></div>
+                            </div>
+                            <div class="project-thumbnail slideshow">
+                                <div class="slideshow-container" ontouchmove="scrollSlides(3)" onscroll="scrollSlides(3)">
+                                    <img class="slide" src="https://t6.rbxcdn.com/1af6a591802ad4e34cbcf67c26f1f63b">
+                                    <img class="slide" src="./Assets/Thumbnails/TLoM2_Screenshot1.png">
+                                    <img class="slide" src="./Assets/Thumbnails/TLoM2_Screenshot2.png">
+                                    <img class="slide" src="./Assets/Thumbnails/TLoM2_Screenshot3.png">
+                                </div>
+                                <div class="slideshow-buttons-container">
+                                    <button class="slideshow-button slideshow-button-focus" onclick="showSlide(3, 0, true)"></button>
+                                    <button class="slideshow-button" onclick="showSlide(3, 1, true)"></button>
+                                    <button class="slideshow-button" onclick="showSlide(3, 2, true)"></button>
+                                    <button class="slideshow-button" onclick="showSlide(3, 3, true)"></button>
+                                </div> 
+                            </div>
+                            <p>
+                                A sequel to my "The Legend of Zelda"-like game. It had a bigger world, more items, 
+                                more temples; an improvement on all aspects, pretty much. Still, this was released in 
+                                early 2014, and like Max Adventure 3, it broke over time. I'm currently working on a
+                                revamp of it.
+                            </p>
+                        </div>
+                        <a class="explore-button" href="https://www.roblox.com/games/170545797/Old-Games-Place" target="_blank">Explore</a>
+                    </article>
+                    <article class="project">
+                        <div class="project-content">
+                            <div class="project-title">
+                                <h3>... And a bunch more</h3>
+                                <div class="project-tags"></div>
+                            </div>
+                            <div class="project-thumbnail slideshow">
+                                <div class="slideshow-container" ontouchmove="scrollSlides(4)" onscroll="scrollSlides(4)">
+                                    <img class="slide" src="./Assets/Thumbnails/TLoM_Thumbnail.png">
+                                    <img class="slide" src="./Assets/Thumbnails/MA2_Thumbnail.png">
+                                    <img class="slide" src="./Assets/Thumbnails/MZCM_Thumbnail.png">
+                                </div>
+                                <div class="slideshow-buttons-container">
+                                    <button class="slideshow-button slideshow-button-focus" onclick="showSlide(4, 0, true)"></button>
+                                    <button class="slideshow-button" onclick="showSlide(4, 1, true)"></button>
+                                    <button class="slideshow-button" onclick="showSlide(4, 2, true)"></button>
+                                </div> 
+                            </div>
+                            <p>
+                                In 2012-2013, I released a bunch of games. Notably there's the original "The Legend of Max" 
+                                (Zelda-like game), "Max Adventure 2" (Mario-like game), the first "Max Adventure" 
+                                (a basic obstacle course), and three zombie survival games. I figured it's not worth 
+                                describing all of them since at this point each game is so small and unpolished. Still,
+                                if you wish to check them out, you can find them all gathered in my "Old Games Place".
+                            </p>
+                        </div>
+                        <a class="explore-button" href="https://www.roblox.com/games/170545797/Old-Games-Place" target="_blank">Explore</a>
+                    </article>
+                </div>
+            </section>
 
         </div>
     </main>
@@ -48,6 +214,8 @@
             Xermax_
         </a>
     </footer>
+
+    <script src="./slideshow.js"></script>
 </body>
 
 </html>
