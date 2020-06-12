@@ -13,6 +13,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html { min-height: 100%; } 
+
 body {
     display: flex;
     flex-direction: column;
@@ -70,17 +72,11 @@ p {
     line-height: 1.4;
 }
 
-img {
-    pointer-events: none;
-}
+img { pointer-events: none; }
 
-button, a {
-    cursor: pointer;
-}
+button, a { cursor: pointer; }
 
-button:focus {
-    outline: none;
-}
+button:focus { outline: none; }
 
 .slideshow {
     position: relative;
@@ -136,9 +132,7 @@ button:focus {
     color: rgb(var(--bg-color));
 }
 
-strong {
-    font-weight: 660;
-}
+strong { font-weight: 660; }
 
 .inline-link:hover {
     text-decoration: underline;
@@ -156,9 +150,7 @@ nav {
     display: flex;
 }
 
-nav a:hover {
-    color: rgb(var(--bg-color));
-}
+nav a:hover { color: rgb(var(--bg-color)); }
 
 .navbar-head {
     margin: 15px;
@@ -230,33 +222,14 @@ footer {
     margin-right: 10px;
 }
 
-.social-media-link:hover img {
-    filter: none;
-}
+.social-media-link:hover img { filter: none; }
 
-#sm-github:hover {
-    color: rgb(0, 0, 0);
-}
-
-#sm-roblox:hover {
-    color: rgb(217, 24, 0);
-}
-
-#sm-discord:hover {
-    color: rgb(95, 108, 195)
-}
-
-#sm-twitter:hover {
-    color: rgb(60, 170, 247)
-}
-
-#sm-youtube:hover {
-    color: rgb(244, 0, 0)
-}
-
-#sm-twitch:hover {
-    color: rgb(102, 59, 186)
-}
+#sm-github:hover { color: rgb(0, 0, 0); }
+#sm-roblox:hover { color: rgb(217, 24, 0); }
+#sm-discord:hover { color: rgb(95, 108, 195); }
+#sm-twitter:hover { color: rgb(60, 170, 247); }
+#sm-youtube:hover { color: rgb(244, 0, 0); }
+#sm-twitch:hover { color: rgb(102, 59, 186); }
 
 /* For moving background */
 @keyframes gradient {
@@ -432,9 +405,7 @@ footer {
     font-weight: 700;
 }
 
-.project-collection-head:hover {
-    color: rgb(var(--bg-color));
-}
+.project-collection-head:hover { color: rgb(var(--bg-color)); }
 
 .project-collection-head::before {
     content: "";
@@ -560,21 +531,11 @@ footer {
     transition: background-color .2s ease-out;
 }
 
-.explore-button {
-    background-color: rgb(167, 90, 230);
-}
+.explore-button { background-color: rgb(167, 90, 230); }
+.explore-button:hover { background-color: rgb(127, 50, 190); }
 
-.explore-button:hover {
-    background-color: rgb(127, 50, 190);
-}
-
-.download-button {
-    background-color: rgb(90, 125, 230);
-}
-
-.download-button:hover {
-    background-color: rgb(50, 85, 190);
-}
+.download-button { background-color: rgb(90, 125, 230); }
+.download-button:hover { background-color: rgb(50, 85, 190); }
 
 .cringe-warning {
     margin: 20px 0;
