@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home • Maxence Roy's GitHub Page</title>
+    <title>Home • Maxence Roy</title>
     <link rel="shortcut icon" href="./Assets/Favicon.png">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="./Styles/style-index.css">
+    <script src="./Scripts/slideshow.js"></script>
 </head>
 
 <body id="body-index">
@@ -32,7 +34,7 @@
                 <h3 class="index-section-title">Who's this?</h3>
                 <div id="bio-grid">
                     <div id="bio-slideshow" class="slideshow">
-                        <div class="slideshow-container" ontouchmove="scrollSlides(0)" onscroll="scrollSlides(0)">
+                        <div class="slideshow-container">
                             <img class="slide" src="./Assets/Index/Slideshow/Slide_1.jpg">
                             <img class="slide" src="./Assets/Index/Slideshow/Slide_2.jpg">
                             <img class="slide" src="./Assets/Index/Slideshow/Slide_3.jpg">
@@ -40,56 +42,60 @@
                             <img class="slide" src="./Assets/Index/Slideshow/Slide_5.jpg">
                         </div>
                         <div class="slideshow-buttons-container">
-                            <button class="slideshow-button slideshow-button-focus" onclick="showSlide(0, 0, true)"></button>
-                            <button class="slideshow-button" onclick="showSlide(0, 1, true)"></button>
-                            <button class="slideshow-button" onclick="showSlide(0, 2, true)"></button>
-                            <button class="slideshow-button" onclick="showSlide(0, 3, true)"></button>
-                            <button class="slideshow-button" onclick="showSlide(0, 4, true)"></button>
+                            <button class="slide-button slide-button-focus"></button>
+                            <button class="slide-button"></button>
+                            <button class="slide-button"></button>
+                            <button class="slide-button"></button>
+                            <button class="slide-button"></button>
                         </div> 
                     </div>
                     <p class="bio-paragraph">
                         Hello there! My name's <strong>Maxence Roy</strong>, also known as <strong>"Xermax"</strong> across various platforms.
-                        I'm currently a college student in Computer Science at 
-                        <a class="inline-link" href="http://www.johnabbott.qc.ca/" target="_blank">John Abbott College</a>,
-                        Montreal, and I&nbsp;wish to pursue a career in software engineering.
+                        I am a software developer currently studying at 
+                        <a class="inline-link" href="https://www.concordia.ca/" target="_blank">Concordia University</a>,
+                        Montreal, in Software Engineering.
+                        I am always eager to partake in exciting new projects!
                     </p>
                     <p class="bio-paragraph">
-                        Ever since I&nbsp;was a kid, I've always loved to entertain and help the people around me.
-                        I&nbsp;developed a passion for creating video games at a young age, and I've been programming since
-                        I&nbsp;was 12 years old. My passion has led me to get actively involved in many online communities,
-                        like the Roblox community.
+                        My passion for programming started in 2014 when I taught myself how to code in order to build my own games.
+                        Since then, through my internships and education in computer science, I have accumulated hands-on experiences in
+                        full-stack website development, cross-platform applications, cloud computing, compilation scripts, 
+                        build and test automation, and IoT platforms; all of this while following the agile approach of course.
                     </p>
                     <p class="bio-paragraph">
-                        Through my successes and my failures, I&nbsp;have learned how to properly
-                        use online resources and work independently. I've also learned how to divide an ambitious
-                        assignment into efficient steps. While working on team projects, I&nbsp;understood the importance of
-                        communicating and making the best use of each other’s skills.
+                        I have a particular interest in fields that will make a big impact in the future like astronomy, artificial intelligence, 
+                        virtual reality, as well as data science.
                     </p>
                     <p class="bio-paragraph">
-                        I&nbsp;love getting together with peers and working on awesome projects. I&nbsp;like to challenge
-                        myself by participating in contests and game jams. I&nbsp;manage the tasks I&nbsp;have to undertake
-                        via calendar and boards. I&nbsp;also love to compile and analyze data. For instance, I&nbsp;use 
-                        Microsoft Excel to follow and visualize my daily tendencies. Outside of computer science, I&nbsp;enjoy
-                        skiing with friends. On top of that, I&nbsp;have a passion for both competitive and cooperative 
-                        card / board games. From time to time, I&nbsp;like to edit videos to create entertaining compilations.
+                        On my free time, I stay involved in personal projects such as creating video games and card games, 
+                        participating in coding competitions, and compiling data about my favorite topics. I also do amateur astrophotography!
                     </p>
                 </div>
             </section>
             <section class="index-section">
-                <h3 class="index-section-title">Languages</h3>
-                <p>
-                    My first programming language was Lua, which is used to make Roblox games. Recently, 
-                    I've been learning many new languages and I'm trying to make fun projects with each one.
-                </p>                
-                <p>
-                    <ul>
-                        <li>Lua (since 2014)</li>
-                        <li>C# (since 2019)</li>
-                        <li>Microsoft PowerShell (since 2019)</li>
-                        <li>HTML / CSS / JavaScript (since 2020)</li>
-                        <li>Python (since 2020)</li>
-                    </ul>
-                </p>
+                <h3 class="index-section-title">Experience</h3>
+                <div class="title-date-box">
+                    <h4>Software Developer @ CAE</h4>
+                    <h4>Jan 2022 - Aug 2022</h4>
+                </div>
+                <ul>
+                    <li>
+                        Resolved issues and updated dependencies for 
+                        <a class="inline-link" href="https://www.youtube.com/watch?v=2w7KJDepdlM" target="_blank">CAE Trax</a> 
+                        flight simulator’s installation software.
+                    </li>
+                    <li>Built Windows app to list and categorize 3D assets.</li>
+                    <li>Tested simulation tools and reported results with task checklist.</li>
+                </ul>
+                <div class="title-date-box">
+                    <h4>Integration Specialist @ CAE</h4>
+                    <h4>May 2021 - Aug 2021</h4>
+                </div>
+                <ul>
+                    <li>Analyzed and optimized compilation scripts for flight simulator.</li>
+                    <li>Migrated project codebase onto software production line: generated assets and repositories.</li>
+                    <li>Installed PC and server components. Configured IP addresses.</li>
+                </ul>
             </section>
             <section class="index-section" id="project-section">
                 <h3 class="index-section-title">Check Out My&nbsp;Projects!</h3>
@@ -127,8 +133,6 @@
             Xermax_
         </a>
     </footer>
-
-    <script src="./slideshow.js"></script>
 </body>
 
 </html>
