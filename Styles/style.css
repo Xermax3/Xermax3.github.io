@@ -128,9 +128,16 @@ button:focus { outline: none; }
     background-color: transparent;
 }
 
-.slide-button-focus, body.hasHover .slide-button:hover {
+.slide-button-focus { /* , .slide-button:hover { */
     border-width: 0;
     background-color: rgba(var(--text-color), 0.6);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .slide-button:hover {
+        border-width: 0;
+        background-color: rgba(var(--text-color), 0.6);
+    }
 }
 
 .inline-link {
@@ -251,7 +258,7 @@ footer {
 
 
 /* For Desktop */
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
     header {
         flex-direction: column;
     }
@@ -260,10 +267,10 @@ footer {
         padding-bottom: 15px;
         text-align: center;
     }
-}
+} */
 
 /* For Tablet */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     #main-width-limit {
         padding-left: 20px;
         padding-right: 20px;
@@ -307,10 +314,10 @@ footer {
     .project-tags *:first-child::before {
         margin-left: 0;
     }
-}
+} */
 
 /* For Mobile */
-@media screen and (max-width: 480px) {   
+/* @media screen and (max-width: 480px) {   
     h1 {
         font-size: 46px;
     }
@@ -370,7 +377,7 @@ footer {
     }
 
     .project-collection-head::before {       
-        /* Arrow */
+        Arrow
         border-top: 10px solid transparent;
         border-bottom: 10px solid transparent;
         border-left: 10px solid currentColor;
@@ -379,4 +386,4 @@ footer {
     .project-tags {
         margin-top: 5px;
     }
-}
+} */

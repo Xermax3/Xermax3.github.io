@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>School Projects • Maxence Roy</title>
         <link rel="shortcut icon" href="./Assets/Favicon.png">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./Styles/style.css">
+        <link rel="stylesheet" href="./Styles/style-proj-schl.css">
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     </head>
 
@@ -28,103 +29,276 @@
     </header>
     <main>
         <div id="main-width-limit">
-            <h2 id="page-title">School Projects</h2>
-            <p>
-                This page is dedicated to projects I've made in college, as part of the Computer Science program at
-                John Abbott College. I only put the most comprehensive and interesting ones.
-            </p>
+            <h2 id="page-title">Coding Projects</h2>
 
-            <section class="project-collection-collapsible">
-                <input id="2020" class="project-collection-toggle" type="checkbox">
-                <label for="2020" class="project-collection-head">2020</label>
-                <div class="project-collection">
-                    <article class="project">
-                        <div class="project-content">
-                            <div class="project-title">
-                                <h3>COVID Simulation</h3>
-                                <div class="project-tags">
-                                    <div class="project-tag-team"></div>
-                                    <div class="project-tag-web"></div>
-                                </div>
-                            </div>
-                            <video class="project-thumbnail" playsinline autoplay loop muted>
-                                <source src="./Assets/Thumbnails/COVIDSim.mp4" type="video/mp4">
-                            </video>
-                            <p>
-                                My final project in web development class was building a website around a COVID-19 infection simulator.
-                                The simulator was initially built by my teachers, but I had to add features on top of it.
-                                This was a team project with my buddy Fabian H. Dimitrov.
-                                <a class="inline-link" href="https://github.com/ArtificialSoda" target="_blank">Check him out on GitHub.</a>
-                                <em>Note:&nbsp;There's a fake login page. You can write anything in it, but nothing will be saved.</em>
-                            </p>
-                        </div>
-                        <a class="explore-button" href="./Projects/School/2020/COVIDSim/index.html" target="_blank">Explore</a>
-                    </article>
-                    <article class="project">
-                        <div class="project-content">
-                            <div class="project-title">
-                                <h3>Video Poker Game</h3>
-                                <div class="project-tags">
-                                    <div class="project-tag-csharp"></div>
-                                </div>
-                            </div>
-                            <video class="project-thumbnail" playsinline autoplay loop muted>
-                                <source src="./Assets/Thumbnails/VideoPokerGame.mp4" type="video/mp4">
-                            </video>
-                            <p>
-                                Final project for Programming II was making a single-player Poker game. It was fun to make.
-                                Feel free to try it out if you have Windows (it's&nbsp;an&nbsp;.exe&nbsp;file).
-                            </p>
-                        </div>
-                        <a class="download-button" href="./Projects/School/2020/VideoPokerGame.exe">Download</a>
-                    </article>
-                    <article class="project">
-                        <div class="project-content">
-                            <div class="project-title">
-                                <h3>Smash Club Website</h3>
-                                <div class="project-tags">
-                                    <div class="project-tag-first"></div>
-                                    <div class="project-tag-web"></div>
-                                </div>
-                            </div>
-                            <video class="project-thumbnail" playsinline autoplay loop muted>
-                                <source src="./Assets/Thumbnails/SmashClub.mp4" type="video/mp4">
-                            </video>
-                            <p>
-                                I had to make an unofficial website for one of my school's clubs and I chose our Smash Bros club.
-                                I guess this technically counts as my first website ever...
-                            </p>
-                        </div>
-                        <a class="explore-button" href="./Projects/School/2020/SmashClub/SC_Home.html" target="_blank">Explore</a>
-                    </article>
+            <article class="project" id="project-farm">
+                <div class="project-header">
+                    <h3>Remotely Controlled Container Farm</h3>
+                    <h4>Winter 2022</h4>
                 </div>
-            </section>
+                <div class="project-content">
+                    <video class="project-thumbnail" playsinline autoplay loop muted>
+                        <source src="./Assets/Thumbnails/COVIDSim.mp4" type="video/mp4">
+                    </video>
+                    <div class="project-description">
+                        <div class="project-tags">
+                            <div class="project-tag-team"></div>
+                            <div class="project-tag-mobile"></div>
+                            <div class="project-tag-cs"></div>
+                            <div class="project-tag-python"></div>
+                        </div>
+                        <p>
+                            blablabla
+                        </p>
+                        <div class="project-links">
+                            <a class="action-button watch-button" href="" target="_blank">Watch</a>
+                            <a class="action-button read-button" href="" target="_blank">Read</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-            <section class="project-collection-collapsible">
-                <input id="2019" class="project-collection-toggle" type="checkbox">
-                <label for="2019" class="project-collection-head">2019</label>
-                <div class="project-collection">
-                    <article class="project">
-                        <div class="project-content">
-                            <div class="project-title">
-                                <h3>Vörb</h3>
-                                <div class="project-tags">
-                                    <div class="project-tag-csharp"></div>
-                                </div>
-                            </div>
-                            <video class="project-thumbnail" playsinline autoplay loop muted>
-                                <source src="./Assets/Thumbnails/Vörb.mp4" type="video/mp4">
-                            </video>
-                            <p>
-                                The final project for my Programming I class was to make a 2D action game using the Windows console.
-                                It was pretty fun to make. Feel free to try it out if you have Windows (it's&nbsp;an&nbsp;.exe&nbsp;file).
-                                <em>Note that your screen needs to be big enough, otherwise the game will crash.</em>
-                            </p>
-                        </div>
-                        <a class="download-button" href="./Projects/School/2019/Vörb.exe">Download</a>
-                    </article>
+            <article class="project" id="project-pizza">
+                <div class="project-header">
+                    <h3>PizzaCore Restaurant Website</h3>
+                    <h4>Fall 2021</h4>
                 </div>
-            </section>
+                <div class="project-content">
+                    <video class="project-thumbnail" playsinline autoplay loop muted>
+                        <source src="./Assets/Thumbnails/COVIDSim.mp4" type="video/mp4">
+                    </video>
+                    <div class="project-description">
+                        <div class="project-tags">
+                            <div class="project-tag-team"></div>
+                            <div class="project-tag-web"></div>
+                            <div class="project-tag-cs"></div>
+                        </div>
+                        <p>
+                            blablabla
+                        </p>
+                        <div class="project-links">
+                            <a class="action-button explore-button" href="" target="_blank">Explore</a>
+                            <a class="action-button watch-button" href="" target="_blank">Watch</a>
+                            <a class="action-button read-button" href="" target="_blank">Read</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project" id="project-budget">
+                <div class="project-header">
+                    <h3>Budget Manager</h3>
+                    <h4>Winter 2021</h4>
+                </div>
+                <div class="project-content">
+                    <video class="project-thumbnail" playsinline autoplay loop muted>
+                        <source src="./Assets/Thumbnails/COVIDSim.mp4" type="video/mp4">
+                    </video>
+                    <div class="project-description">
+                        <div class="project-tags">
+                            <div class="project-tag-team"></div>
+                            <div class="project-tag-windows"></div>
+                            <div class="project-tag-cs"></div>
+                        </div>
+                        <p>
+                            blablabla
+                        </p>
+                        <div class="project-links">
+                            <a class="action-button watch-button" href="" target="_blank">Watch</a>
+                            <a class="action-button download-button" href="" target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project" id="project-reddit">
+                <div class="project-header">
+                    <h3>Reddit Recreation</h3>
+                    <h4>Winter 2021</h4>
+                </div>
+                <div class="project-content">
+                    <video class="project-thumbnail" playsinline autoplay loop muted>
+                        <source src="./Assets/Thumbnails/COVIDSim.mp4" type="video/mp4">
+                    </video>
+                    <div class="project-description">
+                        <div class="project-tags">
+                            <div class="project-tag-solo"></div>
+                            <div class="project-tag-web"></div>
+                            <div class="project-tag-js"></div>
+                        </div>
+                        <p>
+                            blablabla
+                        </p>
+                        <div class="project-links">
+                            <a class="action-button watch-button" href="" target="_blank">Watch</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project" id="project-racing">
+                <div class="project-header">
+                    <h3>2D Solo Racing Game</h3>
+                    <h4>Fall 2020</h4>
+                </div>
+                <div class="project-content">
+                    <video class="project-thumbnail" playsinline autoplay loop muted>
+                        <source src="./Assets/Thumbnails/COVIDSim.mp4" type="video/mp4">
+                    </video>
+                    <div class="project-description">
+                        <div class="project-tags">
+                            <div class="project-tag-solo"></div>
+                            <div class="project-tag-web"></div>
+                            <div class="project-tag-js"></div>
+                        </div>
+                        <p>
+                            blablabla
+                        </p>
+                        <div class="project-links">
+                            <a class="action-button explore-button" href="" target="_blank">Explore</a>
+                            <a class="action-button watch-button" href="" target="_blank">Watch</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project" id="project-discord">
+                <div class="project-header">
+                    <h3>Online Class Attendance Discord Bot</h3>
+                    <h4>Winter 2020</h4>
+                </div>
+                <div class="project-content">
+                    <video class="project-thumbnail" playsinline autoplay loop muted>
+                        <source src="./Assets/Thumbnails/COVIDSim.mp4" type="video/mp4">
+                    </video>
+                    <div class="project-description">
+                        <div class="project-tags">
+                            <div class="project-tag-team"></div>
+                            <div class="project-tag-cs"></div>
+                        </div>
+                        <p>
+                            blablabla
+                        </p>
+                        <div class="project-links">
+                            <a class="action-button watch-button" href="" target="_blank">Watch</a>
+                            <a class="action-button read-button" href="" target="_blank">Read</a>
+                            <a class="action-button download-button" href="" target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project" id="project-covid">
+                <div class="project-header">
+                    <h3>COVID Simulation</h3>
+                    <h4>Winter 2020</h4>
+                </div>
+                <div class="project-content">
+                    <video class="project-thumbnail" playsinline autoplay loop muted>
+                        <source src="./Assets/Thumbnails/COVIDSim.mp4" type="video/mp4">
+                    </video>
+                    <div class="project-description">
+                        <div class="project-tags">
+                            <div class="project-tag-team"></div>
+                            <div class="project-tag-web"></div>
+                            <div class="project-tag-js"></div>
+                        </div>
+                        <p>
+                            My final project in web development class was building a website around a COVID-19 infection simulator.
+                            The simulator was initially built by my teachers, but I had to add features on top of it.
+                            This was a team project with my buddy Fabian H. Dimitrov.
+                            <a class="inline-link" href="https://github.com/ArtificialSoda" target="_blank">Check him out on GitHub.</a>
+                            <em>Note:&nbsp;There's a fake login page. You can write anything in it, but nothing will be saved.</em>
+                        </p>
+                        <div class="project-links">
+                            <a class="action-button explore-button" href="./Projects/School/2020/COVIDSim/index.html" target="_blank">Explore</a>
+                            <a class="action-button watch-button" href="" target="_blank">Watch</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project" id="project-poker">
+                <div class="project-header">
+                    <h3>Video Poker Game</h3>
+                    <h4>Winter 2020</h4>
+                </div>
+                <div class="project-content">
+                    <video class="project-thumbnail" playsinline autoplay loop muted>
+                        <source src="./Assets/Thumbnails/VideoPokerGame.mp4" type="video/mp4">
+                    </video>
+                    <div class="project-description">
+                        <div class="project-tags">
+                            <div class="project-tag-solo"></div>
+                            <div class="project-tag-console"></div>
+                            <div class="project-tag-cs"></div>
+                        </div>
+                        <p>
+                            Final project for Programming II was making a single-player Poker game. It was fun to make.
+                            Feel free to try it out if you have Windows (it's&nbsp;an&nbsp;.exe&nbsp;file).
+                        </p>
+                        <div class="project-links">
+                            <a class="action-button watch-button" href="" target="_blank">Watch</a>
+                            <a class="action-button download-button" href="./Projects/School/2020/VideoPokerGame.exe" target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project" id="project-smash">
+                <div class="project-header">
+                    <h3>Smash Club Website</h3>
+                    <h4>Winter 2020</h4>
+                </div>
+                <div class="project-content">
+                    <video class="project-thumbnail" playsinline autoplay loop muted>
+                        <source src="./Assets/Thumbnails/SmashClub.mp4" type="video/mp4">
+                    </video>
+                    <div class="project-description">
+                        <div class="project-tags">
+                            <div class="project-tag-solo"></div>
+                            <div class="project-tag-web"></div>
+                            <div class="project-tag-js"></div>
+                        </div>
+                        <p>
+                            I had to make an unofficial website for one of my school's clubs and I chose our Smash Bros club.
+                            I guess this technically counts as my first website ever...
+                        </p>
+                        <div class="project-links">
+                            <a class="action-button explore-button" href="./Projects/School/2020/SmashClub/SC_Home.html" target="_blank">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project" id="project-vorb">
+                <div class="project-header">
+                    <h3>Vörb</h3>
+                    <h4>Fall 2019</h4>
+                </div>
+                <div class="project-content">
+                    <video class="project-thumbnail" playsinline autoplay loop muted>
+                        <source src="./Assets/Thumbnails/Vörb.mp4" type="video/mp4">
+                    </video>
+                    <div class="project-description">
+                        <div class="project-tags">
+                            <div class="project-tag-solo"></div>
+                            <div class="project-tag-console"></div>
+                            <div class="project-tag-cs"></div>
+                        </div>
+                        <p>
+                            The final project for my Programming I class was to make a 2D action game using the Windows console.
+                            It was pretty fun to make. Feel free to try it out if you have Windows (it's&nbsp;an&nbsp;.exe&nbsp;file).
+                            <em>Note that your screen needs to be big enough, otherwise the game will crash.</em>
+                        </p>
+                        <div class="project-links">
+                            <a class="action-button watch-button" href="" target="_blank">Watch</a>
+                            <a class="action-button download-button" href="./Projects/School/2019/Vörb.exe" target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
         </div>
     </main>
     <footer>
