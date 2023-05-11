@@ -4,10 +4,10 @@
     --highlight-color: 180, 220, 235;
     --highlight-color-dark: rgb(120, 160, 175);
 
-    --bg-red: #AF4304;
-    --bg-magenta: #970075;
-    --bg-blue: #00079C;
-    --bg-green: #009C3C;
+    --bg-red: hsl(22, 96%, 45%);
+    --bg-magenta: hsl(314, 100%, 40%);
+    --bg-blue: hsl(237, 100%, 41%);
+    --bg-green: hsl(143, 100%, 41%);
 }
 
 * {
@@ -34,28 +34,10 @@ body {
     background-size: 400% 400%;
 }
 
-#body-proj-rblx {
-    background: linear-gradient(45deg, var(--bg-red), var(--bg-magenta));
-    animation: gradient 30s ease infinite;
-    background-size: 400% 400%;
-}
-
-#body-proj-schl {
-    background: linear-gradient(45deg, var(--bg-magenta), var(--bg-blue));
-    animation: gradient 30s ease infinite;
-    background-size: 400% 400%;
-}
-
-#body-proj-misc {
-    background: linear-gradient(45deg, var(--bg-blue), var(--bg-green));
-    animation: gradient 30s ease infinite;
-    background-size: 400% 400%;
-}
-
 h1 {
     margin-bottom: 10px;
     font-weight: 900;
-    font-size: 48px;
+    font-size: 40px;
     line-height: 1;
 }
 
@@ -156,47 +138,40 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
-    background-color: rgba(var(--highlight-color), 0.15);
+    /* background-color: rgba(var(--highlight-color), 0.15); */
 }
 
 nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-nav a:hover { color: rgb(var(--highlight-color)); }
-
-.navbar-head {
-    margin: 15px;
-    font-size: 24px;
-    font-weight: 600;
+.social-media-link {
+    margin-left: 20px;
 }
 
-.navbar-dropdown:hover .navbar-dropdown-content {
-    display: flex;
+.social-media-link img {
+    filter: brightness(0) invert(1);
 }
 
-.navbar-dropdown-content {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    background-color: var(--highlight-dark-color);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    min-width: 100px;
-    margin-left: 15px;
-    margin-top: -10px;
-}
+/* To get css filter from hex: https://codepen.io/sosuke/pen/Pjoqqp */
+#sm-linkedin:hover img { filter: invert(31%) sepia(99%) saturate(641%) hue-rotate(184deg) brightness(97%) contrast(102%); } /*color: #2665c3;*/
+#sm-github:hover img { filter: none; } /*color: #000000;*/
+#sm-instagram:hover img { filter: invert(13%) sepia(85%) saturate(6398%) hue-rotate(314deg) brightness(97%) contrast(105%); } /*color: #f4009a;*/
+#sm-twitter:hover img { filter: invert(50%) sepia(77%) saturate(475%) hue-rotate(165deg) brightness(103%) contrast(94%); } /*color: #3caaf7;*/
+#sm-roblox:hover img { filter: invert(11%) sepia(9%) saturate(431%) hue-rotate(169deg) brightness(92%) contrast(90%); } /*color: #232527;*/
 
-.navbar-dropdown-opt {
-    margin: 5px;
-    font-size: 18px;
-    font-weight: 500;
-}
+#sm-discord:hover img { filter: invert(44%) sepia(20%) saturate(1576%) hue-rotate(195deg) brightness(93%) contrast(83%); } /*color: #5f6cc3;*/
+#sm-youtube:hover img { filter: invert(20%) sepia(92%) saturate(5669%) hue-rotate(356deg) brightness(87%) contrast(125%); } /*color: #f40000;*/
+#sm-twitch:hover img { filter: invert(19%) sepia(90%) saturate(2312%) hue-rotate(251deg) brightness(92%) contrast(85%); } /*color: #663bba;*/
+#sm-reddit:hover img { filter: invert(23%) sepia(75%) saturate(3573%) hue-rotate(16deg) brightness(107%) contrast(103%); } /*color: #f44100;*/
 
 main {
     display: flex;
     justify-content: center;
     flex: 1;
-    background-color: rgba(var(--highlight-color), 0.6);
+    background-color: rgba(var(--highlight-color), 0.5);
 }
 
 #main-width-limit {
@@ -213,35 +188,115 @@ main {
 footer {
     display: flex;
     justify-content: center;
-    align-content: bottom;
-    flex-wrap: wrap;
+    text-align: center;
     padding: 20px;
-    padding-bottom: 5px;
-    background-color: rgba(var(--highlight-color), 0.15);
-}
-
-.social-media-link {
+    padding-bottom: 20px;
     display: flex;
+}
+
+#project-section {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 0 30px 15px;
-    font-weight: 500;
-    font-size: 18px;
 }
 
-.social-media-link img {
-    height: 1.2em;
-    filter: brightness(0) invert(1);
-    margin-right: 10px;
+#project-section h3 {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.social-media-link:hover img { filter: none; }
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
 
-#sm-github:hover { color: rgb(0, 0, 0); }
-#sm-roblox:hover { color: rgb(217, 24, 0); }
-#sm-discord:hover { color: rgb(95, 108, 195); }
-#sm-twitter:hover { color: rgb(60, 170, 247); }
-#sm-youtube:hover { color: rgb(244, 0, 0); }
-#sm-twitch:hover { color: rgb(102, 59, 186); }
+.project-container {
+    /* aspect-ratio: 3 / 2; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 40%;
+    min-width: 280px;
+    margin: 10px;
+    border-radius: 50px;
+    border: 4px solid black;
+    overflow: hidden;
+    -webkit-transition: transform .4s, filter .4s;
+    -moz-transition: transform .4s, filter .4s;
+    -o-transition: transform .4s, filter .4s;
+    transition: transform .4s, filter .4s;
+}
+
+.project-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 102%;
+    width: 102%;
+    padding: 0 50px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: grayscale(30%);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    /* text-shadow: 3px 0 0 #00000080, 0 -3px 0 #00000080, 0 3px 0 #00000080, -3px 0 0 #00000080; */
+    font-size: 32px;
+    font-weight: 700;
+    -webkit-transition: transform .4s, filter .4s;
+    -moz-transition: transform .4s, filter .4s;
+    -o-transition: transform .4s, filter .4s;
+    transition: transform .4s, filter .4s;
+}
+
+
+.project-container:hover {
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.project-container:hover .project-icon {
+    -ms-transform: scale(1.2);
+    -ms-filter: grayscale(0%);
+    -moz-transform: scale(1.2);
+    -moz-filter: grayscale(0%);
+    -webkit-transform: scale(1.2);
+    -webkit-filter: grayscale(0%);
+    -o-transform: scale(1.2);
+    -o-filter: grayscale(0%);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+}
+
+#project-rblx-icon {
+    background-image: url(/Assets/Index/ProjectIcons/Icon_Roblox.png);
+}
+
+#project-proj-icon {
+    background-image: url(/Assets/Index/ProjectIcons/Icon_Project.png);
+}
+
+#project-astr-icon {
+    background-image: url(/Assets/Index/ProjectIcons/Icon_Astronomy.png);
+}
+
+#project-misc-icon {
+    background-image: url(/Assets/Index/ProjectIcons/Icon_Miscellaneous.png);
+}
+
+footer * {
+    margin: 0 20px;
+}
 
 /* For moving background */
 @keyframes gradient {
@@ -256,68 +311,24 @@ footer {
 	}
 }
 
+@media screen and (max-width: 740px) {
+    .project-container {
+        min-width: auto;
+        width: 80%;
+        height: 150px;
+    }
+}
 
-/* For Desktop */
-/* @media screen and (max-width: 1200px) {
+@media screen and (max-width: 660px) {
     header {
         flex-direction: column;
     }
 
     header h1 {
-        padding-bottom: 15px;
+        padding-bottom: 10px;
         text-align: center;
     }
-} */
 
-/* For Tablet */
-/* @media screen and (max-width: 768px) {
-    #main-width-limit {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    
-    .social-media-link {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .project-grid {
-        max-width: 500px;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-    .project-grid::before {
-        padding-bottom: 150px;
-    }
-
-    .project-icon {
-        flex-direction: row;
-    }
-
-    #project-pers-icon {
-        background-image: url(./Assets/Index/ProjectIcons/Roblox_Icon_Hor.png);
-    }
-    
-    #project-schl-icon {
-        background-image: url(./Assets/Index/ProjectIcons/School_Icon_Hor.png);
-    }
-    
-    #project-misc-icon {
-        background-image: url(./Assets/Index/ProjectIcons/Misc_Icon_Hor.png);
-    }
-
-    .project-title {
-        flex-direction: column;
-    }
-
-    .project-tags *:first-child::before {
-        margin-left: 0;
-    }
-} */
-
-/* For Mobile */
-/* @media screen and (max-width: 480px) {   
     h1 {
         font-size: 46px;
     }
@@ -325,65 +336,34 @@ footer {
     h2 {
         font-size: 36px;
     }
+}
 
+@media screen and (max-width: 440px) {
     header {
-        padding-left: 10px;
-        padding-right: 10px;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
-    .navbar-head {
-        margin: 5px;
-        font-size: 16px;
-    }
-
-    .navbar-dropdown-content {
-        margin-left: 5px;
-        margin-top: 0;
-    }
-
-    .navbar-dropdown-opt {
-        font-size: 14px;
+    #main-width-limit {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     footer {
-        align-items: flex-start;
-        justify-content: space-evenly;
-    }
-
-    .social-media-divide {
         flex-direction: column;
-        margin-bottom: 0;
     }
 
-    .social-media-link {
-        font-size: 16px;
-    }
-
-    #bio-slideshow {
-        min-width: none;
-        max-width: none;
-        float: none;
-        margin-left: 0;
-        margin-bottom: 15px;
-    }
-
-    .project-collection-head {
-        font-size: 34px;
-    }
-
-    .project-collection {
+    .project-container {
+        width: 100%;
         margin-left: 0;
         margin-right: 0;
     }
 
-    .project-collection-head::before {       
-        Arrow
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-        border-left: 10px solid currentColor;
+    .project-icon {
+        font-size: 24px;
+        -webkit-text-stroke-width: 1px;
     }
+}
 
-    .project-tags {
-        margin-top: 5px;
-    }
-} */
+/* TODO: Mobile first approach, use min-width. */

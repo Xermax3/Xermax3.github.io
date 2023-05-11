@@ -1,64 +1,20 @@
-/* .project-collection-collapsible {
-    -webkit-transition: transform 0.25s ease-out;
-    -moz-transition: transform 0.25s ease-out;
-    -o-transition: transform 0.25s ease-out;
-    transition: transform 0.25s ease-out;
+#body-proj-code {
+    background: linear-gradient(45deg, var(--bg-magenta), var(--bg-blue));
+    animation: gradient 30s ease infinite;
+    background-size: 400% 400%;
 }
 
-.project-collection-collapsible:first-of-type {
-    margin-top: 30px;
+#body-proj-rblx {
+    background: linear-gradient(45deg, var(--bg-red), var(--bg-magenta));
+    animation: gradient 30s ease infinite;
+    background-size: 400% 400%;
 }
 
-.project-collection-toggle {
-    display: none;
+#body-proj-misc {
+    background: linear-gradient(45deg, var(--bg-blue), var(--bg-green));
+    animation: gradient 30s ease infinite;
+    background-size: 400% 400%;
 }
-
-.project-collection-head {
-    cursor: pointer;
-    font-size: 40px;
-    font-weight: 700;
-}
-
-.project-collection-head:hover { color: rgb(var(--highlight-color));}
-
-.project-collection-head::before {
-    content: "";
-    display: inline-block;
-    
-    Arrow
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid currentColor;
-  
-    margin-right: 20px;
-    -ms-transform: translateY(-2px);
-    -moz-transform: translateY(-2px);
-    -webkit-transform: translateY(-2px);
-    -o-transform: translateY(-2px);
-    transform: translateY(-2px);
-    -webkit-transition: transform .2s ease-out;
-    -moz-transition: transform .2s ease-out;
-    -o-transition: transform .2s ease-out;
-    transition: transform .2s ease-out;
-}
-
-.project-collection-toggle:checked + .project-collection-head + .project-collection {
-    max-height: 3000px;Subject to change
-}
-
-.project-collection-toggle:checked + .project-collection-head::before {
-    transform: rotate(90deg) translateX(-3px);
-}
-
-.project-collection {
-    margin: 0 35px 20px;
-    max-height: 0px;
-    overflow: hidden;
-    -webkit-transition: max-height .25s ease-in-out;
-    -moz-transition: max-height .25s ease-in-out;
-    -o-transition: max-height .25s ease-in-out;
-    transition: max-height .25s ease-in-out;
-} */
 
 .project {
     display: flex;
@@ -77,16 +33,19 @@
     align-items: end;
 }
 
+.project-header h3 {
+    margin-right: 20px;
+}
+
 .project-content {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
-
 }
 
 .project-thumbnail {
     /* flex: 1; */
-    width: 46%;
+    width: 55%;
     margin-right: 20px;
 }
 
@@ -122,12 +81,14 @@
 
 .project-tags {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 .project-tags *::before {
     display: inline-block;
     margin-right: 10px;
+    margin-bottom: 10px;
     padding: 4px 12px;
     border-radius: 30px;
     text-align: center;
@@ -172,6 +133,7 @@
 .project-tag-console::before {
     content: "🔢 Console App";
     background-color: purple;
+    padding-left: 10px;
 }
 
 .project-tag-cs::before {
@@ -191,13 +153,14 @@
 
 .project-links {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
 }
 
 .action-button {
     display: inline-block;
-    margin: 0 3px;
+    margin: 10px 3px 0 3px;
     padding: 12px 0;
     width: 150px;
     border-radius: 30px;
@@ -210,8 +173,8 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.explore-button { background-color: rgb(160, 90, 230);}
-.explore-button:hover { background-color: rgb(120, 50, 190);}
+.explore-button { background-color: rgb(160, 0, 230);}
+.explore-button:hover { background-color: rgb(110, 0, 190);}
 
 .watch-button { background-color: rgb(230, 90, 90);}
 .watch-button:hover { background-color: rgb(190, 50, 50);}
@@ -223,14 +186,19 @@
 .download-button:hover { background-color: rgb(50, 120, 190);}
 
 
-.cringe-warning {
-    margin: 20px 0;
-    text-align: center;
-}
+@media screen and (max-width: 800px) {
+    .project-header {
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .project-content {
+        flex-direction: column;
+    }
 
-.cringe-warning::before {
-    content: "Warning: I made the stuff below when I was young and dumb. Expect cringe.";
-    font-size: 24px;
-    font-weight: 700;
-    color: red;
+    .project-thumbnail {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
