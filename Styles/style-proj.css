@@ -37,15 +37,23 @@
     margin-right: 20px;
 }
 
+.project-header h4 {
+    margin-top: 5px;
+}
+
 .project-content {
+    min-height: 320px;
     margin-top: 10px;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .project-thumbnail {
     /* flex: 1; */
     width: 55%;
+    height: 100%; /* Same as project-content height. */
+    object-fit: cover;
     margin-right: 20px;
 }
 
@@ -54,6 +62,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.project-description p {
+    margin-bottom: 10px;
 }
 
 /* .project-description > * {
@@ -113,6 +125,12 @@
     padding-left: 8px;
 }
 
+.project-tag-agile::before {
+    content: "🔄 Agile";
+    background-color: rgb(160, 160, 32);
+    padding-left: 10px;
+}
+
 .project-tag-web::before {
     content: "🌐 Web";
     background-color: purple;
@@ -151,6 +169,11 @@
     background-color: rgb(0, 64, 128);
 }
 
+.project-tag-java::before {
+    content: "Java";
+    background-color: rgb(0, 64, 128);
+}
+
 .project-links {
     display: flex;
     flex-wrap: wrap;
@@ -162,7 +185,7 @@
     display: inline-block;
     margin: 10px 3px 0 3px;
     padding: 12px 0;
-    width: 150px;
+    width: 120px;
     border-radius: 30px;
     text-align: center;
     font-weight: 600;
@@ -173,20 +196,36 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.explore-button { background-color: rgb(160, 0, 230);}
-.explore-button:hover { background-color: rgb(110, 0, 190);}
+.explore-button { background-color: rgb(90, 190, 0);}
+.explore-button:hover { background-color: rgb(50, 150, 0);}
 
 .watch-button { background-color: rgb(230, 90, 90);}
 .watch-button:hover { background-color: rgb(190, 50, 50);}
 
-.read-button { background-color: rgb(90, 190, 0);}
-.read-button:hover { background-color: rgb(50, 150, 0);}
+.read-button { background-color: rgb(230, 160, 0);}
+.read-button:hover { background-color: rgb(190, 120, 0);}
 
-.download-button { background-color: rgb(90, 160, 230);}
-.download-button:hover { background-color: rgb(50, 120, 190);}
+/* .read-button { background-color: rgb(190, 90, 230);}
+.read-button:hover { background-color: rgb(150, 50, 190);} */
+
+.source-button { background-color: rgb(90, 160, 230);}
+.source-button:hover { background-color: rgb(50, 120, 190);}
 
 
-@media screen and (max-width: 800px) {
+#up-next {
+    margin-bottom: 40px;
+}
+
+#up-next h3 {
+    margin-bottom: 10px;
+}
+
+#up-next article {
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 840px) {
     .project-header {
         flex-direction: column;
         align-items: start;

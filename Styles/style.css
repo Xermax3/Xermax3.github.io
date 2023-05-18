@@ -54,10 +54,9 @@ h3 {
     line-height: 1.2;
 }
 
-p {
-    font-weight: 400;
+h4, p {
     font-size: 18px;
-    line-height: 1.4;
+    /* line-height: 1.4; */
 }
 
 img { pointer-events: none; }

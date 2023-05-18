@@ -32,274 +32,484 @@
     <main>
         <div id="main-width-limit">
             <h2 id="page-title">Coding Projects</h2>
+            <p>
+                This page lists some of my major (non-Roblox) coding projects that I have done over the past years.
+                At the moment, everything listed consists of academic projects built during college.
+                But I have many personal projects that I am hoping to get started with this year!
+            </p>
 
-            <article class="project" id="project-farm">
-                <div class="project-header">
-                    <h3>Remotely Controlled Container Farm</h3>
-                    <h4>Winter 2022</h4>
-                </div>
-                <div class="project-content">
-                    <video class="project-thumbnail" playsinline autoplay loop muted>
-                        <source src="./Assets/Thumbnails/COVIDSim.mp4" type="video/mp4">
-                    </video>
-                    <div class="project-description">
-                        <div class="project-tags">
-                            <div class="project-tag-team"></div>
-                            <div class="project-tag-mobile"></div>
-                            <div class="project-tag-cs"></div>
-                            <div class="project-tag-python"></div>
-                        </div>
-                        <p>
-                            blablabla
-                        </p>
-                        <div class="project-links">
-                            <a class="action-button watch-button" href="" target="_blank">Watch</a>
-                            <a class="action-button read-button" href="" target="_blank">Read</a>
+            <section id="project-list">
+                <article class="project" id="project-farm">
+                    <div class="project-header">
+                        <!--Icon: 🌱-->
+                        <h3>Remotely Controlled Container Farm</h3>
+                        <h4>Winter 2022</h4>
+                    </div>
+                    <div class="project-content">
+                        <img class="project-thumbnail" src="./Assets/Thumbnails/Coding/farm.png">
+                        <div class="project-description">
+                            <div class="project-tags">
+                                <div class="project-tag-team"></div>
+                                <div class="project-tag-agile"></div>
+                                <div class="project-tag-mobile"></div>
+                                <div class="project-tag-python"></div>
+                                <div class="project-tag-cs"></div>
+                            </div>
+                            <p>
+                                IoT system for managing a container farm.
+                                This was the final project for both my Application&nbsp;Development&nbsp;III and Connected&nbsp;Objects course
+                                in collaboration with <a class="inline-link" href="https://github.com/Elmegaard3380" target="_blank">Magnus&nbsp;Bigras</a>,
+                                <a class="inline-link" href="https://github.com/nnicv" target="_blank">Nicholas&nbsp;Chudinov</a>,
+                                and <a class="inline-link" href="https://github.com/terror" target="_blank">Liam&nbsp;Scalzulli</a>.
+                                First, environmental data collection was implemented with Raspberry&nbsp;Pi modules.
+                                Then, telemetry messages were made to automatically dispatch via Azure&nbsp;IoT&nbsp;Hub.
+                                Finally, a Xamarin mobile app was created to visualize data and control modules.
+                                Workflow was managed via Jira tasks and sprints (Agile).
+                            </p>
+                            <p><em>Note: The source code provided is a clone of the original repo. Previous commits cannot be seen.</em></p>
+                            <div class="project-links">
+                                <a class="action-button read-button" href="/Projects/Documents/farm.pdf" target="_blank">Read</a>
+                                <a class="action-button source-button" href="https://github.com/Xermax3/ContainerFarm" target="_blank">Source</a>
+                                <!-- <a class="action-button source-button" href="https://github.com/jac-final-project-w22/course-project-grass-touchers" target="_blank">Source</a> -->
+                            </div>
                         </div>
                     </div>
-                </div>
-            </article>
+                </article>
 
-            <article class="project" id="project-pizza">
-                <div class="project-header">
-                    <h3>PizzaCore Restaurant Website</h3>
-                    <h4>Fall 2021</h4>
-                </div>
-                <div class="project-content">
-                    <video class="project-thumbnail" playsinline autoplay loop muted>
-                        <source src="./Assets/Thumbnails/COVIDSim.mp4" type="video/mp4">
-                    </video>
-                    <div class="project-description">
-                        <div class="project-tags">
-                            <div class="project-tag-team"></div>
-                            <div class="project-tag-web"></div>
-                            <div class="project-tag-cs"></div>
-                        </div>
-                        <p>
-                            blablabla
-                        </p>
-                        <div class="project-links">
-                            <a class="action-button explore-button" href="" target="_blank">Explore</a>
-                            <a class="action-button watch-button" href="" target="_blank">Watch</a>
-                            <a class="action-button read-button" href="" target="_blank">Read</a>
+                <article class="project" id="project-medal">
+                    <div class="project-header">
+                        <!--Icon: 🏅-->
+                        <h3>Medal Tracker</h3>
+                        <h4>Winter 2022</h4>
+                    </div>
+                    <div class="project-content">
+                        <img class="project-thumbnail" src="./Assets/Thumbnails/Coding/medal.png">
+                        <div class="project-description">
+                            <div class="project-tags">
+                                <div class="project-tag-solo"></div>
+                                <div class="project-tag-mobile"></div>
+                                <div class="project-tag-cs"></div>
+                            </div>
+                            <p>
+                                Cross-platform mobile app for listing countries' Olympic medals.
+                                This was a project for my Application&nbsp;Development&nbsp;III course.
+                                Built with Xamarin. Features include sorting, charts, and sharing data onto other apps. 
+                            </p>
+                            <p><em>Note: The source code provided is a clone of the original repo. Previous commits cannot be seen.</em></p>
+                            <div class="project-links">
+                                <a class="action-button watch-button" href="https://youtu.be/eOfn4G4SQBI" target="_blank">Watch</a>
+                                <a class="action-button source-button" href="https://github.com/Xermax3/MedalTracker" target="_blank">Source</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </article>
+                </article>
 
-            <article class="project" id="project-budget">
-                <div class="project-header">
-                    <h3>Budget Manager</h3>
-                    <h4>Winter 2021</h4>
-                </div>
-                <div class="project-content">
-                    <video class="project-thumbnail" playsinline autoplay loop muted>
-                        <source src="./Assets/Thumbnails/COVIDSim.mp4" type="video/mp4">
-                    </video>
-                    <div class="project-description">
-                        <div class="project-tags">
-                            <div class="project-tag-team"></div>
-                            <div class="project-tag-windows"></div>
-                            <div class="project-tag-cs"></div>
-                        </div>
-                        <p>
-                            blablabla
-                        </p>
-                        <div class="project-links">
-                            <a class="action-button watch-button" href="" target="_blank">Watch</a>
-                            <a class="action-button download-button" href="" target="_blank">Download</a>
+                <article class="project" id="project-pizza">
+                    <div class="project-header">
+                        <!--Icon: 🍕-->
+                        <h3>PizzaCore</h3>
+                        <h4>Fall 2021</h4>
+                    </div>
+                    <div class="project-content">
+                        <img class="project-thumbnail" src="./Assets/Thumbnails/Coding/pizza.png">
+                        <div class="project-description">
+                            <div class="project-tags">
+                                <div class="project-tag-team"></div>
+                                <div class="project-tag-agile"></div>
+                                <div class="project-tag-web"></div>
+                                <div class="project-tag-cs"></div>
+                            </div>
+                            <p>
+                                Comprehensive restaurant website with database built with ASP.NET.
+                                This was the final project for my Web&nbsp;Programming&nbsp;III course
+                                in collaboration with <a class="inline-link" href="https://github.com/Ishpal-Mattu" target="_blank">Ishpal&nbsp;Mattu</a>,
+                                <a class="inline-link" href="https://github.com/brentper" target="_blank">Brent&nbsp;Pereira</a>,
+                                and <a class="inline-link" href="https://github.com/terror" target="_blank">Liam&nbsp;Scalzulli</a>.
+                                The site includes a shopping cart, account creation, user authentication, and role assignment.
+                                Third party APIs were also implemented: reCAPTCHA, Google&nbsp;Maps, and SendGrid.
+                                Workflow was managed via Azure&nbsp;DevOps tasks and sprints (Agile). A usability analysis was conducted.
+                            </p>
+                            <div class="project-links">
+                                <a class="action-button read-button" href="/Projects/Documents/pizza.pdf" target="_blank">Read</a>
+                                <a class="action-button source-button" href="https://github.com/terror/PizzaCore" target="_blank">Source</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </article>
+                </article>
 
-            <article class="project" id="project-reddit">
-                <div class="project-header">
-                    <h3>Reddit Recreation</h3>
-                    <h4>Winter 2021</h4>
-                </div>
-                <div class="project-content">
-                    <video class="project-thumbnail" playsinline autoplay loop muted>
-                        <source src="./Assets/Thumbnails/COVIDSim.mp4" type="video/mp4">
-                    </video>
-                    <div class="project-description">
-                        <div class="project-tags">
-                            <div class="project-tag-solo"></div>
-                            <div class="project-tag-web"></div>
-                            <div class="project-tag-js"></div>
-                        </div>
-                        <p>
-                            blablabla
-                        </p>
-                        <div class="project-links">
-                            <a class="action-button watch-button" href="" target="_blank">Watch</a>
+                <article class="project" id="project-tenant">
+                    <div class="project-header">
+                        <!--Icon: 🏘️-->
+                        <h3>TenantCore</h3>
+                        <h4>Fall 2021</h4>
+                    </div>
+                    <div class="project-content">
+                        <img class="project-thumbnail" src="./Assets/Thumbnails/Coding/tenant.png">
+                        <div class="project-description">
+                            <div class="project-tags">
+                                <div class="project-tag-team"></div>
+                                <div class="project-tag-agile"></div>
+                                <div class="project-tag-mobile"></div>
+                                <div class="project-tag-java"></div>
+                            </div>
+                            <p>
+                                An Android app for landlords and tenants to manage requests. 
+                                This was the final project for my Application&nbsp;Development&nbsp;II course
+                                in collaboration with <a class="inline-link" href="https://github.com/Ishpal-Mattu" target="_blank">Ishpal&nbsp;Mattu</a>,
+                                <a class="inline-link" href="https://github.com/brentper" target="_blank">Brent&nbsp;Pereira</a>,
+                                and <a class="inline-link" href="https://github.com/terror" target="_blank">Liam&nbsp;Scalzulli</a>.
+                                Built using Android&nbsp;Studio. Information is stored in a database. Workflow was managed via Jira tasks and sprints (Agile). 
+                            </p>
+                            <div class="project-links">
+                                <a class="action-button watch-button" href="https://youtu.be/SE6STYugdI8" target="_blank">Watch</a>
+                                <a class="action-button source-button" href="https://github.com/terror/TenantCore" target="_blank">Source</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </article>
+                </article>
 
-            <article class="project" id="project-racing">
-                <div class="project-header">
-                    <h3>2D Solo Racing Game</h3>
-                    <h4>Fall 2020</h4>
-                </div>
-                <div class="project-content">
-                    <video class="project-thumbnail" playsinline autoplay loop muted>
-                        <source src="./Assets/Thumbnails/COVIDSim.mp4" type="video/mp4">
-                    </video>
-                    <div class="project-description">
-                        <div class="project-tags">
-                            <div class="project-tag-solo"></div>
-                            <div class="project-tag-web"></div>
-                            <div class="project-tag-js"></div>
-                        </div>
-                        <p>
-                            blablabla
-                        </p>
-                        <div class="project-links">
-                            <a class="action-button explore-button" href="" target="_blank">Explore</a>
-                            <a class="action-button watch-button" href="" target="_blank">Watch</a>
+                <article class="project" id="project-tasks">
+                    <div class="project-header">
+                        <!--Icon: ✅-->
+                        <h3>Tasks App</h3>
+                        <h4>Fall 2021</h4>
+                    </div>
+                    <div class="project-content">
+                        <img class="project-thumbnail" src="./Assets/Thumbnails/Coding/tasks.png">
+                        <div class="project-description">
+                            <div class="project-tags">
+                                <div class="project-tag-solo"></div>
+                                <div class="project-tag-mobile"></div>
+                                <div class="project-tag-java"></div>
+                            </div>
+                            <p>
+                                An Android app to manage tasks. 
+                                This was a project for my Application&nbsp;Development&nbsp;II course.
+                                Built using Android&nbsp;Studio. Information is stored in a database.
+                                Features include filtering tasks, making and undoing edits, and notifications when a task is due.
+                            </p>
+                            <p><em>Note: The source code provided is a clone of the original repo. Previous commits cannot be seen.</em></p>
+                            <div class="project-links">
+                                <a class="action-button watch-button" href="https://youtu.be/ljPAnfKdkbw" target="_blank">Watch</a>
+                                <a class="action-button source-button" href="https://github.com/Xermax3/TasksApp" target="_blank">Source</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </article>
+                </article>
 
-            <article class="project" id="project-discord">
-                <div class="project-header">
-                    <h3>Online Class Attendance Discord Bot</h3>
-                    <h4>Winter 2020</h4>
-                </div>
-                <div class="project-content">
-                    <video class="project-thumbnail" playsinline autoplay loop muted>
-                        <source src="./Assets/Thumbnails/COVIDSim.mp4" type="video/mp4">
-                    </video>
-                    <div class="project-description">
-                        <div class="project-tags">
-                            <div class="project-tag-team"></div>
-                            <div class="project-tag-cs"></div>
-                        </div>
-                        <p>
-                            blablabla
-                        </p>
-                        <div class="project-links">
-                            <a class="action-button watch-button" href="" target="_blank">Watch</a>
-                            <a class="action-button read-button" href="" target="_blank">Read</a>
-                            <a class="action-button download-button" href="" target="_blank">Download</a>
+                <article class="project" id="project-reddit">
+                    <div class="project-header">
+                        <!--Icon: 💬-->
+                        <h3>Reddit Clone</h3>
+                        <h4>Winter 2021</h4>
+                    </div>
+                    <div class="project-content">
+                        <img class="project-thumbnail" src="./Assets/Thumbnails/Coding/reddit.png">
+                        <div class="project-description">
+                            <div class="project-tags">
+                                <div class="project-tag-solo"></div>
+                                <div class="project-tag-web"></div>
+                                <div class="project-tag-js"></div>
+                            </div>
+                            <p>
+                                Reddit-like forum web app deployed with Node.js.
+                                This was the final project for my Web&nbsp;Programming&nbsp;II course.
+                                The website handles every possible HTTP request through REST APIs.
+                                Its code is organized using the Model-View-Controller architecture and tested with Jest. As you can see, front-end wasn't a priority here lol.
+                            </p>
+                            <p><em>Note: The source code provided is a clone of the original repo. Previous commits cannot be seen.</em></p>
+                            <div class="project-links">
+                                <a class="action-button watch-button" href="https://youtu.be/0LhveCha8Ig" target="_blank">Watch</a>
+                                <a class="action-button source-button" href="https://github.com/Xermax3/RedditClone" target="_blank">Source</a>
+                                <!-- <a class="action-button source-button" href="https://github.com/JAC-CS-Web-Programming-II-W21/assignment-5-Xermax3" target="_blank">Source</a> -->
+                            </div>
                         </div>
                     </div>
-                </div>
-            </article>
+                </article>
 
-            <article class="project" id="project-covid">
-                <div class="project-header">
-                    <h3>COVID Simulation</h3>
-                    <h4>Winter 2020</h4>
-                </div>
-                <div class="project-content">
-                    <video class="project-thumbnail" playsinline autoplay loop muted>
-                        <source src="./Assets/Thumbnails/COVIDSim.mp4" type="video/mp4">
-                    </video>
-                    <div class="project-description">
-                        <div class="project-tags">
-                            <div class="project-tag-team"></div>
-                            <div class="project-tag-web"></div>
-                            <div class="project-tag-js"></div>
-                        </div>
-                        <p>
-                            My final project in web development class was building a website around a COVID-19 infection simulator.
-                            The simulator was initially built by my teachers, but I had to add features on top of it.
-                            This was a team project with my buddy Fabian H. Dimitrov.
-                            <a class="inline-link" href="https://github.com/ArtificialSoda" target="_blank">Check him out on GitHub.</a>
-                            <em>Note:&nbsp;There's a fake login page. You can write anything in it, but nothing will be saved.</em>
-                        </p>
-                        <div class="project-links">
-                            <a class="action-button explore-button" href="./Projects/School/2020/COVIDSim/index.html" target="_blank">Explore</a>
-                            <a class="action-button watch-button" href="" target="_blank">Watch</a>
+                <article class="project" id="project-budget">
+                    <div class="project-header">
+                        <!--Icon: 💸-->
+                        <h3>Budget Manager</h3>
+                        <h4>Winter 2021</h4>
+                    </div>
+                    <div class="project-content">
+                        <img class="project-thumbnail" src="./Assets/Thumbnails/Coding/budget.png">
+                        <div class="project-description">
+                            <div class="project-tags">
+                                <div class="project-tag-team"></div>
+                                <div class="project-tag-agile"></div>
+                                <div class="project-tag-windows"></div>
+                                <div class="project-tag-cs"></div>
+                            </div>
+                            <p>
+                                Installable Windows application for tracking personal expenses.
+                                This was the final project for my Application&nbsp;Development&nbsp;I course
+                                in collaboration with <a class="inline-link" href="https://github.com/danhalis" target="_blank">Hieu&nbsp;Dao&nbsp;Le&nbsp;Duc</a>
+                                and <a class="inline-link" href="https://github.com/brentper" target="_blank">Brent&nbsp;Pereira</a>.
+                                It involved creating a documented C# codebase exported as a DLL library, then implementing it onto an WPF app with database.
+                                Workflow was managed via Jira tasks and sprints (Agile). Functionality was tested through unit tests and verified with GitHub&nbsp;actions (CI/CD).
+                            </p>
+                            <p><em>Note: The source code provided is a clone of the original repo. Previous commits cannot be seen.</em></p>
+                            <div class="project-links">
+                                <a class="action-button watch-button" href="https://youtu.be/F6zqP9ZNAms" target="_blank">Watch</a>
+                                <a class="action-button source-button" href="https://github.com/Xermax3/BudgetManager" target="_blank">Source</a>
+                                <!-- <a class="action-button source-button" href="https://github.com/danhalis/AppDevI_HieuBrentMaxYaoyu" target="_blank">Source</a> -->
+                                <!-- <a class="action-button source-button" href="https://github.com/danhalis/AppDevGUI_bhm" target="_blank">Source</a> -->
+                            </div>
                         </div>
                     </div>
-                </div>
-            </article>
+                </article>
 
-            <article class="project" id="project-poker">
-                <div class="project-header">
-                    <h3>Video Poker Game</h3>
-                    <h4>Winter 2020</h4>
-                </div>
-                <div class="project-content">
-                    <video class="project-thumbnail" playsinline autoplay loop muted>
-                        <source src="./Assets/Thumbnails/VideoPokerGame.mp4" type="video/mp4">
-                    </video>
-                    <div class="project-description">
-                        <div class="project-tags">
-                            <div class="project-tag-solo"></div>
-                            <div class="project-tag-console"></div>
-                            <div class="project-tag-cs"></div>
-                        </div>
-                        <p>
-                            Final project for Programming II was making a single-player Poker game. It was fun to make.
-                            Feel free to try it out if you have Windows (it's&nbsp;an&nbsp;.exe&nbsp;file).
-                        </p>
-                        <div class="project-links">
-                            <a class="action-button watch-button" href="" target="_blank">Watch</a>
-                            <a class="action-button download-button" href="./Projects/School/2020/VideoPokerGame.exe" target="_blank">Download</a>
+                <article class="project" id="project-fultra">
+                    <div class="project-header">
+                        <!--Icon: 🏎️-->
+                        <h3>F-Ultra</h3>
+                        <h4>Fall 2020</h4>
+                    </div>
+                    <div class="project-content">
+                        <img class="project-thumbnail" src="./Assets/Thumbnails/Coding/fultra.png">
+                        <div class="project-description">
+                            <div class="project-tags">
+                                <div class="project-tag-solo"></div>
+                                <div class="project-tag-web"></div>
+                                <div class="project-tag-js"></div>
+                            </div>
+                            <p>
+                                2D racing game on Canvas (though it's not really a racing since it is single-player).
+                                This was the final project for my Web&nbsp;Programming&nbsp;I course.
+                                Collision detection was tricky but once it worked it was really satisfying!
+                            </p>
+                            <p><em>Note:&nbsp;The game only works on desktop.</em></p>
+                            <div class="project-links">
+                                <a class="action-button explore-button" href="/Projects/FUltra/index.html" target="_blank">Play</a>
+                                <a class="action-button watch-button" href="https://youtu.be/bf9i5GhKZEA" target="_blank">Watch</a>
+                                <a class="action-button source-button" href="https://github.com/Xermax3/3W5_Roy_M" target="_blank">Source</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </article>
+                </article>
 
-            <article class="project" id="project-smash">
-                <div class="project-header">
-                    <h3>Smash Club Website</h3>
-                    <h4>Winter 2020</h4>
-                </div>
-                <div class="project-content">
-                    <video class="project-thumbnail" playsinline autoplay loop muted>
-                        <source src="./Assets/Thumbnails/SmashClub.mp4" type="video/mp4">
-                    </video>
-                    <div class="project-description">
-                        <div class="project-tags">
-                            <div class="project-tag-solo"></div>
-                            <div class="project-tag-web"></div>
-                            <div class="project-tag-js"></div>
-                        </div>
-                        <p>
-                            I had to make an unofficial website for one of my school's clubs and I chose our Smash Bros club.
-                            I guess this technically counts as my first website ever...
-                        </p>
-                        <div class="project-links">
-                            <a class="action-button explore-button" href="./Projects/School/2020/SmashClub/SC_Home.html" target="_blank">Explore</a>
+                <article class="project" id="project-inventory">
+                    <div class="project-header">
+                        <!--Icon: 🛍️-->
+                        <h3>Inventory Manager</h3>
+                        <h4>Fall 2020</h4>
+                    </div>
+                    <div class="project-content">
+                        <img class="project-thumbnail" src="./Assets/Thumbnails/Coding/inventory.png">
+                        <div class="project-description">
+                            <div class="project-tags">
+                                <div class="project-tag-team"></div>
+                                <div class="project-tag-windows"></div>
+                                <div class="project-tag-cs"></div>
+                            </div>
+                            <p>
+                                Windows application (WPF) for tracking items in an inventory.
+                                This was the final project for my Programming&nbsp;III course 
+                                in collaboration with <a class="inline-link" href="https://github.com/terror" target="_blank">Liam&nbsp;Scalzulli</a>.
+                            </p>
+                            <div class="project-links">
+                                <a class="action-button watch-button" href="https://youtu.be/4ZklLTsuWxM" target="_blank">Watch</a>
+                                <a class="action-button read-button" href="/Projects/Documents/inventory.pdf" target="_blank">Read</a>
+                                <a class="action-button source-button" href="https://github.com/terror/InventoryTracker" target="_blank">Source</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </article>
+                </article>
 
-            <article class="project" id="project-vorb">
-                <div class="project-header">
-                    <h3>Vörb</h3>
-                    <h4>Fall 2019</h4>
-                </div>
-                <div class="project-content">
-                    <video class="project-thumbnail" playsinline autoplay loop muted>
-                        <source src="./Assets/Thumbnails/Vörb.mp4" type="video/mp4">
-                    </video>
-                    <div class="project-description">
-                        <div class="project-tags">
-                            <div class="project-tag-solo"></div>
-                            <div class="project-tag-console"></div>
-                            <div class="project-tag-cs"></div>
-                        </div>
-                        <p>
-                            The final project for my Programming I class was to make a 2D action game using the Windows console.
-                            It was pretty fun to make. Feel free to try it out if you have Windows (it's&nbsp;an&nbsp;.exe&nbsp;file).
-                            <em>Note that your screen needs to be big enough, otherwise the game will crash.</em>
-                        </p>
-                        <div class="project-links">
-                            <a class="action-button watch-button" href="" target="_blank">Watch</a>
-                            <a class="action-button download-button" href="./Projects/School/2019/Vörb.exe" target="_blank">Download</a>
+                <article class="project" id="project-covid">
+                    <div class="project-header">
+                        <!--Icon: 🦠-->
+                        <h3>COVID Bubble Simulation</h3>
+                        <h4>Winter 2020</h4>
+                    </div>
+                    <div class="project-content">
+                        <img class="project-thumbnail" src="./Assets/Thumbnails/Coding/covid.png">
+                        <!-- <video class="project-thumbnail" playsinline loop muted>
+                            <source src="./Assets/Thumbnails/Coding/covid.mp4" type="video/mp4">
+                        </video> -->
+                        <div class="project-description">
+                            <div class="project-tags">
+                                <div class="project-tag-team"></div>
+                                <div class="project-tag-web"></div>
+                                <div class="project-tag-js"></div>
+                            </div>
+                            <p>
+                                Infection simulator on Canvas.
+                                This was the final project for my User&nbsp;Interface course 
+                                in collaboration with <a class="inline-link" href="https://github.com/ArtificialSoda" target="_blank">Fabian&nbsp;Dimitrov</a>.
+                                An initial codebase was provided, and features were added on top of it.
+                            </p>
+                            <p><em>Note:&nbsp;There's a fake login page. You can write anything in it and nothing will be saved.</em></p>
+                            <div class="project-links">
+                                <a class="action-button explore-button" href="/Projects/COVIDSim/index.html" target="_blank">Explore</a>
+                                <a class="action-button watch-button" href="https://youtu.be/eSTY45629pw" target="_blank">Watch</a>
+                                <a class="action-button source-button" href="https://github.com/ArtificialSoda/FinalProject-UI" target="_blank">Source</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </article>
+                </article>
+
+                <article class="project" id="project-discord">
+                    <div class="project-header">
+                        <!--Icon: 📋-->
+                        <h3>Online Class Attendance Discord Bot</h3>
+                        <h4>Winter 2020</h4>
+                    </div>
+                    <div class="project-content">
+                        <img class="project-thumbnail" src="./Assets/Thumbnails/Coding/discord.png">
+                        <div class="project-description">
+                            <div class="project-tags">
+                                <div class="project-tag-team"></div>
+                                <div class="project-tag-cs"></div>
+                            </div>
+                            <p>
+                                Discord bot to help facilitate taking attendance during online classes.
+                                This was the final project for my Information&nbsp;Technology course
+                                in collaboration with <a class="inline-link" href="https://github.com/ArtificialSoda" target="_blank">Fabian&nbsp;Dimitrov</a>,
+                                <a class="inline-link" href="https://github.com/Staggier" target="_blank">Jordan&nbsp;McIntyre</a>,
+                                and <a class="inline-link" href="https://github.com/brentper" target="_blank">Brent&nbsp;Pereira</a>.
+                                When requested, the bot posts a poll that students can react to, then deletes it after a certain interval.
+                                Data is compiled into a csv file and privately sent to the user who called the bot.
+                            </p>
+                            <div class="project-links">
+                                <!-- <a class="action-button watch-button" href="https://youtu.be/" target="_blank">Watch</a> -->
+                                <a class="action-button read-button" href="/Projects/Documents/discord.pdf" target="_blank">Read</a>
+                                <a class="action-button source-button" href="https://github.com/ArtificialSoda/DiscordAttendanceBot" target="_blank">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project" id="project-poker">
+                    <div class="project-header">
+                        <!--Icon: 🃏-->
+                        <h3>Video Poker Game</h3>
+                        <h4>Winter 2020</h4>
+                    </div>
+                    <div class="project-content">
+                        <img class="project-thumbnail" src="./Assets/Thumbnails/Coding/poker.png">
+                        <!-- <video class="project-thumbnail" playsinline loop muted>
+                            <source src="./Assets/Thumbnails/Coding/poker.mp4" type="video/mp4">
+                        </video> -->
+                        <div class="project-description">
+                            <div class="project-tags">
+                                <div class="project-tag-solo"></div>
+                                <div class="project-tag-console"></div>
+                                <div class="project-tag-cs"></div>
+                            </div>
+                            <p>
+                                Single-player Poker game on Windows console.
+                                This was the final project for my Programming&nbsp;II course.
+                                If you want to try it, you can compile the Visual&nbsp;Studio project on a Windows computer.
+                            </p>
+                            <p><em>Note:&nbsp;Your screen needs to be large enough for the game to execute.</em></p>
+                            <div class="project-links">
+                                <a class="action-button watch-button" href="https://youtu.be/nLjjid_y0Qc" target="_blank">Watch</a>
+                                <a class="action-button source-button" href="https://github.com/Xermax3/VideoPokerGame" target="_blank">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project" id="project-smash">
+                    <div class="project-header">
+                        <!--Icon: 💥-->
+                        <h3>Smash Club Website</h3>
+                        <h4>Winter 2020</h4>
+                    </div>
+                    <div class="project-content">
+                        <img class="project-thumbnail" src="./Assets/Thumbnails/Coding/smash.png">
+                        <!-- <video class="project-thumbnail" playsinline loop muted>
+                            <source src="./Assets/Thumbnails/Coding/smash.mp4" type="video/mp4">
+                        </video> -->
+                        <div class="project-description">
+                            <div class="project-tags">
+                                <div class="project-tag-solo"></div>
+                                <div class="project-tag-web"></div>
+                            </div>
+                            <p>
+                                Unofficial website for my college's "Smash&nbsp;Bros" club.
+                                This was a project for my User Interface course.
+                                This was the first full website I ever did. No JavaScript yet!
+                            </p>
+                            <div class="project-links">
+                                <a class="action-button explore-button" href="/Projects/SmashClub/SC_Home.html" target="_blank">Explore</a>
+                                <a class="action-button source-button" href="https://github.com/Xermax3/SmashClub" target="_blank">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project" id="project-vorb">
+                    <div class="project-header">
+                        <!--Icon: 👾-->
+                        <h3>Vörb</h3>
+                        <h4>Fall 2019</h4>
+                    </div>
+                    <div class="project-content">
+                        <img class="project-thumbnail" src="./Assets/Thumbnails/Coding/vorb.png">
+                        <!-- <video class="project-thumbnail" playsinline loop muted>
+                            <source src="./Assets/Thumbnails/Coding/vorb.mp4" type="video/mp4">
+                        </video> -->
+                        <div class="project-description">
+                            <div class="project-tags">
+                                <div class="project-tag-solo"></div>
+                                <div class="project-tag-console"></div>
+                                <div class="project-tag-cs"></div>
+                            </div>
+                            <p>
+                                Single-player 2D action game on Windows console.
+                                This was the final project for my Programming I course.
+                                I had a lot of fun making it. If you want to play it, you can compile the Visual&nbsp;Studio project on a Windows computer.
+                            </p>
+                            <p><em>Note:&nbsp;Your screen needs to be large enough for the game to execute.</em></p>
+                            <div class="project-links">
+                                <a class="action-button watch-button" href="https://youtu.be/EWxSNr2YEXM" target="_blank">Watch</a>
+                                <a class="action-button source-button" href="https://github.com/Xermax3/Vorb" target="_blank">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section id="up-next">
+                <h3>Up Next</h3>
+                <p>Here's a list of personal projects I'm planning on doing eventually.</p>
+                <article>
+                    <!--Icon: 🌍-->
+                    <h4>Infection</h4>
+                    <p>
+                        A single-player strategy game on web and mobile where you must prevent viruses from spreading around the world.
+                        I would host the web version here and perhaps release the mobile one on app stores.
+                    </p>
+                </article>
+                <article>
+                    <!--Icon: 🌐-->
+                    <h4>Website Revamp</h4>
+                    <p>
+                        There's a few additions I want to make for this site: add a French version, add an astronomy page for pictures and events, 
+                        and add a tag filter for projects. Also, once I start hosting proper web projects here, I will likely migrate this GitHub page to a proper website.
+                    </p>
+                </article>
+                <article>
+                    <!--Icon: 📺-->
+                    <h4>Locally Hosted TV Games</h4>
+                    <p>
+                        Various games hosted on a local server. A TV connects to it as well as players on their phones. Prompts are shown on phones 
+                        and results are displayed on TV <em><a class="inline-link" href="https://www.jackboxgames.com/" target="_blank">Jackbox-style</a></em>.
+                        Would be super fun to play with my family.
+                    </p>
+                </article>
+                <article>
+                    <!--Icon: 🎮-->
+                    <h4>Any Unity Game</h4>
+                    <p>
+                        I would definitely like to make a proper game involving Unity. Perhaps in a game jam!
+                    </p>
+                </article>
+            </section>
 
             <section id="project-section">
                 <h3>Check Out My&nbsp;Other&nbsp;Projects!</h3>
