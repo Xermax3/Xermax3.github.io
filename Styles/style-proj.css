@@ -19,7 +19,6 @@
 .project {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between;*/
     align-items: left;
     margin: 35px 0 35px;
     padding: 10px 0 35px;
@@ -42,7 +41,6 @@
 }
 
 .project-content {
-    min-height: 320px;
     margin-top: 10px;
     display: flex;
     flex-direction: row;
@@ -52,7 +50,6 @@
 .project-thumbnail {
     /* flex: 1; */
     width: 55%;
-    height: 100%; /* Same as project-content height. */
     object-fit: cover;
     margin-right: 20px;
 }
@@ -67,29 +64,6 @@
 .project-description p {
     margin-bottom: 10px;
 }
-
-/* .project-description > * {
-    margin-bottom: 10px;
-} */
-
-/* .project-title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    text-align: center;
-} */
-
-/* .project-thumbnail {
-    object-fit: cover;
-    object-position: top;
-    width: 100%;
-    max-height: 500px;
-    margin-bottom: 5px;
-}
-
-.project-thumbnail .slideshow-buttons-container {
-    padding: 0 20%;
-} */
 
 .project-tags {
     display: flex;
@@ -107,11 +81,6 @@
     font-size: 0.8rem;
     font-weight: 500;
 }
-
-/* .project-tag-first::before {
-    content: "First Project Using This";
-    background-color: rgb(210, 220, 0);
-} */
 
 .project-tag-team::before {
     content: "🤝 Team Project";
@@ -204,9 +173,6 @@
 
 .read-button { background-color: rgb(230, 160, 0);}
 .read-button:hover { background-color: rgb(190, 120, 0);}
-
-/* .read-button { background-color: rgb(190, 90, 230);}
-.read-button:hover { background-color: rgb(150, 50, 190);} */
 
 .source-button { background-color: rgb(90, 160, 230);}
 .source-button:hover { background-color: rgb(50, 120, 190);}
