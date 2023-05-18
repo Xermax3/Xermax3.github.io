@@ -1,0 +1,377 @@
+:root {
+    --text-color: 255, 255, 255;
+    --link-color: rgb(240, 240, 150);
+    --highlight-color: 180, 220, 235;
+    --highlight-color-dark: rgb(120, 160, 175);
+
+    --bg-red: hsl(22, 96%, 45%);
+    --bg-magenta: hsl(314, 100%, 40%);
+    --bg-blue: hsl(237, 100%, 41%);
+    --bg-green: hsl(143, 100%, 41%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgb(var(--text-color));
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html { min-height: 100%; } 
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* background: black; */
+}
+
+#body-index {
+    background: linear-gradient(45deg, var(--bg-red), var(--bg-magenta), var(--bg-blue), var(--bg-green));
+    animation: gradient 30s ease infinite;
+    background-size: 400% 400%;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.4;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+h4, p {
+    font-size: 18px;
+    /* line-height: 1.4; */
+}
+
+img { pointer-events: none; }
+
+button, a { cursor: pointer; }
+
+button:focus { outline: none; }
+
+.slideshow {
+    position: relative;
+    padding: 0 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideshow-container {
+    display: flex;
+    overflow-x: auto;
+    /* scroll-snap-type: x mandatory; */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.slideshow-container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.slide {
+    width: 102%;
+    object-fit: cover;
+    scroll-snap-align: center;
+    position: relative;
+}
+
+.slideshow-buttons-container {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 24px;
+    padding: 0 24px;
+    z-index: 2;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide-button {
+    height: 22px;
+    width: 22px;
+    border: 2px solid rgba(var(--text-color), 0.6);
+    border-radius: 12px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.slide-button-focus { /* , .slide-button:hover { */
+    border-width: 0;
+    background-color: rgba(var(--text-color), 0.6);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .slide-button:hover {
+        border-width: 0;
+        background-color: rgba(var(--text-color), 0.6);
+    }
+}
+
+.inline-link {
+    display: inline;
+    color: var(--link-color);
+}
+
+strong { font-weight: 660; }
+
+.inline-link:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    /* background-color: rgba(var(--highlight-color), 0.15); */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-link {
+    margin-left: 20px;
+}
+
+.social-media-link img {
+    filter: brightness(0) invert(1);
+}
+
+/* To get css filter from hex: https://codepen.io/sosuke/pen/Pjoqqp */
+#sm-linkedin:hover img { filter: invert(31%) sepia(99%) saturate(641%) hue-rotate(184deg) brightness(97%) contrast(102%); } /*color: #2665c3;*/
+#sm-github:hover img { filter: none; } /*color: #000000;*/
+#sm-instagram:hover img { filter: invert(13%) sepia(85%) saturate(6398%) hue-rotate(314deg) brightness(97%) contrast(105%); } /*color: #f4009a;*/
+#sm-twitter:hover img { filter: invert(50%) sepia(77%) saturate(475%) hue-rotate(165deg) brightness(103%) contrast(94%); } /*color: #3caaf7;*/
+#sm-roblox:hover img { filter: invert(11%) sepia(9%) saturate(431%) hue-rotate(169deg) brightness(92%) contrast(90%); } /*color: #232527;*/
+
+#sm-discord:hover img { filter: invert(44%) sepia(20%) saturate(1576%) hue-rotate(195deg) brightness(93%) contrast(83%); } /*color: #5f6cc3;*/
+#sm-youtube:hover img { filter: invert(20%) sepia(92%) saturate(5669%) hue-rotate(356deg) brightness(87%) contrast(125%); } /*color: #f40000;*/
+#sm-twitch:hover img { filter: invert(19%) sepia(90%) saturate(2312%) hue-rotate(251deg) brightness(92%) contrast(85%); } /*color: #663bba;*/
+#sm-reddit:hover img { filter: invert(23%) sepia(75%) saturate(3573%) hue-rotate(16deg) brightness(107%) contrast(103%); } /*color: #f44100;*/
+
+main {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    background-color: rgba(var(--highlight-color), 0.5);
+}
+
+#main-width-limit {
+    max-width: 1000px;
+    padding: 40px;
+    padding-bottom: 10px;
+    /* background-color: rgba(var(--highlight-color), 0.4); */
+}
+
+#page-title {
+    text-align: center;
+}
+
+.sub-title * {
+    margin-top: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+#project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#project-section h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.project-container {
+    /* aspect-ratio: 3 / 2; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 40%;
+    min-width: 280px;
+    margin: 10px;
+    border-radius: 50px;
+    border: 4px solid black;
+    overflow: hidden;
+    -webkit-transition: transform .4s, filter .4s;
+    -moz-transition: transform .4s, filter .4s;
+    -o-transition: transform .4s, filter .4s;
+    transition: transform .4s, filter .4s;
+}
+
+.project-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 102%;
+    width: 102%;
+    padding: 0 50px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: grayscale(30%);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    /* text-shadow: 3px 0 0 #00000080, 0 -3px 0 #00000080, 0 3px 0 #00000080, -3px 0 0 #00000080; */
+    font-size: 32px;
+    font-weight: 700;
+    -webkit-transition: transform .4s, filter .4s;
+    -moz-transition: transform .4s, filter .4s;
+    -o-transition: transform .4s, filter .4s;
+    transition: transform .4s, filter .4s;
+}
+
+
+.project-container:hover {
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.project-container:hover .project-icon {
+    -ms-transform: scale(1.2);
+    -ms-filter: grayscale(0%);
+    -moz-transform: scale(1.2);
+    -moz-filter: grayscale(0%);
+    -webkit-transform: scale(1.2);
+    -webkit-filter: grayscale(0%);
+    -o-transform: scale(1.2);
+    -o-filter: grayscale(0%);
+    transform: scale(1.2);
+    filter: grayscale(0%);
+}
+
+#project-rblx-icon {
+    background-image: url(/Assets/Index/ProjectIcons/Icon_Roblox.png);
+}
+
+#project-proj-icon {
+    background-image: url(/Assets/Index/ProjectIcons/Icon_Project.png);
+}
+
+#project-astr-icon {
+    background-image: url(/Assets/Index/ProjectIcons/Icon_Astronomy.png);
+}
+
+#project-misc-icon {
+    background-image: url(/Assets/Index/ProjectIcons/Icon_Miscellaneous.png);
+}
+
+footer * {
+    margin: 0 20px;
+}
+
+/* For moving background */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media screen and (max-width: 740px) {
+    .project-container {
+        min-width: auto;
+        width: 80%;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 46px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    header {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #main-width-limit {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .project-container {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .project-icon {
+        font-size: 24px;
+        -webkit-text-stroke-width: 1px;
+    }
+}
+
+/* TODO: Mobile first approach, use min-width. */

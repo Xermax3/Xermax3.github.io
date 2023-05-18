@@ -1,0 +1,209 @@
+#body-proj-code {
+    background: linear-gradient(45deg, var(--bg-magenta), var(--bg-blue));
+    animation: gradient 30s ease infinite;
+    background-size: 400% 400%;
+}
+
+#body-proj-rblx {
+    background: linear-gradient(45deg, var(--bg-red), var(--bg-magenta));
+    animation: gradient 30s ease infinite;
+    background-size: 400% 400%;
+}
+
+#body-proj-misc {
+    background: linear-gradient(45deg, var(--bg-blue), var(--bg-green));
+    animation: gradient 30s ease infinite;
+    background-size: 400% 400%;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 35px 0 35px;
+    padding: 10px 0 35px;
+    border-bottom: 1px solid white;
+}
+
+.project-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.project-header h3 {
+    margin-right: 20px;
+}
+
+.project-header h4 {
+    margin-top: 5px;
+}
+
+.project-content {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project-thumbnail {
+    /* flex: 1; */
+    width: 55%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.project-description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-description p {
+    margin-bottom: 10px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.project-tags *::before {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 4px 12px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.project-tag-team::before {
+    content: "🤝 Team Project";
+    background-color: rgb(0, 128, 128);
+    padding-left: 8px;
+}
+
+.project-tag-solo::before {
+    content: "👨‍💻 Solo Project";
+    background-color: rgb(0, 128, 128);
+    padding-left: 8px;
+}
+
+.project-tag-agile::before {
+    content: "🔄 Agile";
+    background-color: rgb(160, 160, 32);
+    padding-left: 10px;
+}
+
+.project-tag-web::before {
+    content: "🌐 Web";
+    background-color: purple;
+    padding-left: 8px;
+}
+
+.project-tag-mobile::before {
+    content: "📱 Mobile";
+    background-color: purple;
+}
+
+.project-tag-windows::before {
+    content: "🖥️ Windows App";
+    background-color: purple;
+    padding-left: 10px;
+}
+
+.project-tag-console::before {
+    content: "🔢 Console App";
+    background-color: purple;
+    padding-left: 10px;
+}
+
+.project-tag-cs::before {
+    content: "C#";
+    background-color: rgb(0, 64, 128);
+}
+
+.project-tag-python::before {
+    content: "Python";
+    background-color: rgb(0, 64, 128);
+}
+
+.project-tag-js::before {
+    content: "JavaScript";
+    background-color: rgb(0, 64, 128);
+}
+
+.project-tag-java::before {
+    content: "Java";
+    background-color: rgb(0, 64, 128);
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.action-button {
+    display: inline-block;
+    margin: 10px 5px 0 5px;
+    padding: 12px 0;
+    width: 120px;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 600;
+    -webkit-transition: background-color .2s ease-out;
+    -moz-transition: background-color .2s ease-out;
+    -o-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.explore-button { background-color: rgb(90, 190, 0);}
+.explore-button:hover { background-color: rgb(50, 150, 0);}
+
+.watch-button { background-color: rgb(230, 90, 90);}
+.watch-button:hover { background-color: rgb(190, 50, 50);}
+
+.read-button { background-color: rgb(230, 160, 0);}
+.read-button:hover { background-color: rgb(190, 120, 0);}
+
+.source-button { background-color: rgb(90, 160, 230);}
+.source-button:hover { background-color: rgb(50, 120, 190);}
+
+
+#up-next {
+    margin-bottom: 40px;
+}
+
+#up-next h3 {
+    margin-bottom: 10px;
+}
+
+#up-next article {
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 840px) {
+    .project-header {
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .project-content {
+        flex-direction: column;
+    }
+
+    .project-thumbnail {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
