@@ -68,6 +68,9 @@ button:focus { outline: none; }
 .slideshow {
     position: relative;
     padding: 0 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slideshow-container {
@@ -95,8 +98,10 @@ button:focus { outline: none; }
     position: absolute;
     bottom: 0;
     margin-bottom: 24px;
+    padding: 0 24px;
     z-index: 2;
     width: 100%;
+    max-width: 300px;
     display: flex;
     justify-content: space-between;
 }
@@ -106,7 +111,7 @@ button:focus { outline: none; }
     width: 22px;
     border: 2px solid rgba(var(--text-color), 0.6);
     border-radius: 12px;
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.1);
 }
 
 .slide-button-focus { /* , .slide-button:hover { */
@@ -182,6 +187,10 @@ main {
 
 #page-title {
     text-align: center;
+}
+
+.sub-title * {
+    margin-top: 10px;
 }
 
 footer {

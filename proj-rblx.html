@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./Assets/Favicon.png">
     <link rel="stylesheet" href="./Styles/style.css">
     <link rel="stylesheet" href="./Styles/style-proj.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="./Scripts/slideshow.js"></script>
 </head>
 
 <body id="body-proj-rblx">
@@ -32,227 +32,293 @@
     <main>
         <div id="main-width-limit">
             <h2 id="page-title">Roblox Projects</h2>
-            <p>
-                For those who aren't familiar with it, Roblox is a free online platform that hosts games made by 
-                its users. It is essentially a game engine that provides servers for people to play your games.
-                Roblox is what inspired me to get into programming and because of it I've met a lot of great people. 
-                Although I haven't really released a full game since 2014, I'm still somewhat active on the platform. 
-                Feel free to check out 
-                <a class="inline-link" href="https://www.roblox.com/users/23865788/profile" target="_blank">my&nbsp;profile</a>!
-                Note that if you want to try out the games, you'll need install Roblox on your computer.
-            </p>
+            <div class="sub-title">
+                <p>
+                    For those who aren't familiar, Roblox is essentially a game engine that provides servers for people to play your games for free.
+                    This platform is what inspired me to get into programming and, thanks to it, I've met a lot of great people. 
+                    Although nowadays it is harder for me to find time to work on my games, my passion for the hobby remains unchanged.
+                    My priority right now is revamping my older games, which have slowly broken over time.
+                </p>
+                <p>
+                    Feel free to check out 
+                    <a class="inline-link" href="https://www.roblox.com/users/23865788/profile" target="_blank">my&nbsp;profile</a>!
+                </p>
+                <p><em>Note that if you want to try out my games, you will need to install Roblox on your computer and create an account.</em></p>
+            </div>
 
-            <article class="project" id="project-farm">
+            <article class="project" id="project-df">
                 <div class="project-header">
-                    <h3>Max Adventure 3 Revamp</h3>
-                    <h4>2021-2023</h4>
+                    <h3>Deep Freeze</h3>
+                    <h4>2021, 2023?</h4>
                 </div>
                 <div class="project-content">
-                    <!-- <div class="project-thumbnail slideshow">
-                        
-                    </div> -->
-                    <div class="project-description">
-                        <div class="project-tags">
-                            <div class="project-tag-inprogress"></div>
+                    <div class="project-thumbnail slideshow">
+                        <div class="slideshow-container">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/DF_Screenshot1.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/DF_Screenshot2.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/DF_Screenshot3.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/DF_Screenshot4.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/DF_Screenshot5.png">
                         </div>
+                        <div class="slideshow-buttons-container">
+                            <button class="slide-button slide-button-focus"></button>
+                            <button class="slide-button"></button>
+                            <button class="slide-button"></button>
+                            <button class="slide-button"></button>
+                            <button class="slide-button"></button>
+                        </div>
+                    </div>
+                    <div class="project-description">
                         <p>
-                            desc
+                            A 3D third-person shooter rethinking of <a class="inline-link" href="https://www.youtube.com/watch?v=hEvQIjlF23I" target="_blank">the homonymous Flash game</a>.
+                            This was the final project for my Game&nbsp;Programming course in college.
+                            In this game, the player takes the role of Santa&nbsp;Claus, whose presents have been stolen by Halloween creatures trying to ruin Christmas.
+                            The goal is to survive the onslaught of enemies and to gather enough gifts to save the holiday.
+                            The game is technically finished. But before releasing it, I want to add more enemies and tools and make the game multiplayer.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project" id="project-bb">
+                <div class="project-header">
+                    <h3>Balloon Brawlers</h3>
+                    <h4>2019, 2023?</h4>
+                </div>
+                <div class="project-content">
+                    <div class="project-thumbnail slideshow">
+                        <div class="slideshow-container">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/BB_Thumbnail.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/BB_Screenshot1.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/BB_Screenshot2.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/BB_Screenshot3.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/BB_Screenshot4.png">
+                        </div>
+                        <div class="slideshow-buttons-container">
+                            <button class="slide-button slide-button-focus"></button>
+                            <button class="slide-button"></button>
+                            <button class="slide-button"></button>
+                            <button class="slide-button"></button>
+                            <button class="slide-button"></button>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            Competitive game inspired by Kirby Air Ride where players gather boosts and items then fight each other to capture an exquisite plane ticket.
+                            I made this in collaboration with <a class="inline-link" href="https://www.roblox.com/users/21296544/profile/" target="_blank">PleasantKillerman</a>
+                            as part of the <a class="inline-link" href="https://www.roblox.com/groups/10482/Adventure-Club" target="_blank">Adventure&nbsp;Club</a>'s
+                            <em>Summer Game&nbsp;Jam 2019</em>. At the moment, only the first phase of the game has been implemented. We're planning to finish the game soon though.
                         </p>
                         <div class="project-links">
-                            <!-- <a class="action-button explore-button" href="" target="_blank">Explore</a> -->
+                            <a class="action-button explore-button" href="https://www.roblox.com/games/3284234862/Balloon-Brawlers-WIP" target="_blank">Play</a>
+                            <a class="action-button watch-button" href="https://youtu.be/nSkUr4WYo0Y" target="_blank">Watch</a>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <article class="project" id="project-farm">
+            <article class="project" id="project-qq">
                 <div class="project-header">
                     <h3>Quad Quests</h3>
-                    <h4>2018-2019*</h4>
+                    <h4>2018-2019, 2024?</h4>
                 </div>
                 <div class="project-content">
-                    <!-- <div class="project-thumbnail slideshow">
-                        <div class="slideshow-container" ontouchmove="scrollSlides(0)" onscroll="scrollSlides(0)">
-                            <img class="slide" src="./Assets/Thumbnails/QQ_Screenshot1.png">
-                            <img class="slide" src="./Assets/Thumbnails/QQ_Screenshot2.png">
-                            <img class="slide" src="./Assets/Thumbnails/QQ_Screenshot3.png">
-                            <img class="slide" src="./Assets/Thumbnails/QQ_Screenshot4.png">
-                            <img class="slide" src="./Assets/Thumbnails/QQ_Screenshot5.png">
+                    <div class="project-thumbnail slideshow">
+                        <div class="slideshow-container">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/QQ_Screenshot1.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/QQ_Screenshot2.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/QQ_Screenshot3.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/QQ_Screenshot4.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/QQ_Screenshot5.png">
                         </div>
                         <div class="slideshow-buttons-container">
-                            <button class="slideshow-button slideshow-button-focus" onclick="showSlide(0, 0, true)"></button>
-                            <button class="slideshow-button" onclick="showSlide(0, 1, true)"></button>
-                            <button class="slideshow-button" onclick="showSlide(0, 2, true)"></button>
-                            <button class="slideshow-button" onclick="showSlide(0, 3, true)"></button>
-                            <button class="slideshow-button" onclick="showSlide(0, 4, true)"></button>
+                            <button class="slide-button slide-button-focus"></button>
+                            <button class="slide-button"></button>
+                            <button class="slide-button"></button>
+                            <button class="slide-button"></button>
+                            <button class="slide-button"></button>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="project-description">
-                        <div class="project-tags">
-                            <div class="project-tag-paused"></div>
-                        </div>
                         <p>
-                            A 4-player cooperative game where each player picks a character with an unique
-                            set of attributes and powers. With their respective traits, they try to reach
-                            various goals and collect loot.
+                            A 4-player cooperative game where everyone picks a character with a unique set of attributes and powers.
+                            Using their abilities, players collaborate to solve puzzles and collect loot.
+                            The game was created as part of my high school's personal project for the International Baccalaureate.
+                            I created game design documents and reported progress every week during meetings.
+                            I definitely want to come back to this as soon as possible!
                         </p>
                         <div class="project-links">
-                            <!-- <a class="action-button explore-button" href="" target="_blank">Explore</a> -->
+                            <a class="action-button watch-button" href="https://youtu.be/niOK0aGHkd4" target="_blank">Watch</a>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <article class="project" id="project-farm">
+            <article class="project" id="project-tlom2r">
                 <div class="project-header">
                     <h3>The Legend of Max 2 Revamp</h3>
-                    <h4>2018-2020*</h4>
+                    <h4>2017-2018, 2024?</h4>
                 </div>
                 <div class="project-content">
-                    <!-- <div class="project-thumbnail slideshow">
-                        <div class="slideshow-container" ontouchmove="scrollSlides(1)" onscroll="scrollSlides(1)">
-                            <img class="slide" src="./Assets/Thumbnails/TLoM2R_Screenshot1.png">
-                            <img class="slide" src="./Assets/Thumbnails/TLoM2R_Screenshot2.png">
-                            <img class="slide" src="./Assets/Thumbnails/TLoM2R_Screenshot3.png">
+                    <div class="project-thumbnail slideshow">
+                        <div class="slideshow-container">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/TLoM2R_Screenshot1.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/TLoM2R_Screenshot2.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/TLoM2R_Screenshot3.png">
                         </div>
                         <div class="slideshow-buttons-container">
-                            <button class="slideshow-button slideshow-button-focus" onclick="showSlide(1, 0, true)"></button>
-                            <button class="slideshow-button" onclick="showSlide(1, 1, true)"></button>
-                            <button class="slideshow-button" onclick="showSlide(1, 2, true)"></button>
+                            <button class="slide-button slide-button-focus"></button>
+                            <button class="slide-button"></button>
+                            <button class="slide-button"></button>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="project-description">
-                        <div class="project-tags">
-                            <div class="project-tag-paused"></div>
-                        </div>
                         <p>
-                            The Legend of Max 2 was a game I released in early 2014 inspired by "The Legend of Zelda"
-                            series. Due to updates, it broke a few years ago. So, I've been fixing it, polishing
-                            certain aspects, and adding a few new features. The game was originally single-player, but
-                            with this revamp players will be able to play among others.
+                            The Legend&nbsp;of&nbsp;Max&nbsp;2 was a game that I released in early 2014 inspired by "The&nbsp;Legend&nbsp;of&nbsp;Zelda" series.
+                            Over time, the game broke. This revamp aims to fix that on top of polishing and expanding every aspect of the game.
+                            Unfortunately, I never got to finish revamping the game (nearly 80% done) as other projects took priority.
+                            I will definitely come back to it one day but when that happens, I'll have to reprogram everything as the revamp code is quite old by now.
                         </p>
-                        <div class="project-links">
-                            <!-- <a class="action-button explore-button" href="" target="_blank">Explore</a> -->
-                        </div>
                     </div>
                 </div>
             </article>
 
-            <article class="project" id="project-farm">
+            <article class="project" id="project-ma3">
                 <div class="project-header">
                     <h3>Max Adventure 3</h3>
                     <h4>2014</h4>
                 </div>
                 <div class="project-content">
-                    <!-- <div class="project-thumbnail slideshow">
-                        <div class="slideshow-container" ontouchmove="scrollSlides(2)" onscroll="scrollSlides(2)">
-                            <img class="slide" src="./Assets/Thumbnails/MA3_Thumbnail.png">
-                            <img class="slide" src="./Assets/Thumbnails/MA3_Screenshot1.png">
-                            <img class="slide" src="./Assets/Thumbnails/MA3_Screenshot2.png">
-                            <img class="slide" src="./Assets/Thumbnails/MA3_Screenshot3.png">
+                    <div class="project-thumbnail slideshow">
+                        <div class="slideshow-container">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/MA3_Thumbnail.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/MA3_Screenshot1.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/MA3_Screenshot2.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/MA3_Screenshot3.png">
                         </div>
                         <div class="slideshow-buttons-container">
-                            <button class="slideshow-button slideshow-button-focus" onclick="showSlide(2, 0, true)"></button>
-                            <button class="slideshow-button" onclick="showSlide(2, 1, true)"></button>
-                            <button class="slideshow-button" onclick="showSlide(2, 2, true)"></button>
-                            <button class="slideshow-button" onclick="showSlide(2, 3, true)"></button>
+                            <button class="slide-button slide-button-focus"></button>
+                            <button class="slide-button"></button>
+                            <button class="slide-button"></button>
+                            <button class="slide-button"></button>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="project-description">
-                        <div class="project-tags">
-                            <div class="project-tag-old"></div>
-                        </div>
                         <p>
-                            My most "well-known" and latest game (released in October 2014...).
-                            Max Adventure 3 was yet another "collectathon"  adventure game, where you go through 
-                            a bunch of worlds to collect stuff and unlock powers. This game in particular was
-                            heavily inspired by Donkey Kong 64. I remember it being very fun to make.
-                            It gathered around 5k players after a few months, and some small YouTube channels even 
-                            recorded themselves playing it. Automatic updates caused it to break around 2017, 
-                            but I'm hoping to revamp it in the near future.
+                            My most "well-known" and technically my latest game.
+                            Max&nbsp;Adventure&nbsp;3 is a "collectathon" adventure game, where you explore worlds to collect items and unlock powers. 
+                            This game in particular was heavily inspired by Donkey&nbsp;Kong&nbsp;64.
+                            After a few months, 5,000 players had played the game. Some small YouTube channels even recorded themselves playing it!
+                            Automatic updates caused the game to break a few years ago, but I am currently in the process of revamping it.
                         </p>
                         <div class="project-links">
-                            <a class="action-button explore-button" href="https://www.roblox.com/games/170545797/Old-Games-Place" target="_blank">Explore</a>
+                            <a class="action-button explore-button" href="https://www.roblox.com/games/170545797/Old-Games-Place" target="_blank">Play</a>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <article class="project" id="project-farm">
+            <article class="project" id="project-tlom2">
                 <div class="project-header">
                     <h3>The Legend of Max 2</h3>
                     <h4>2013-2014</h4>
                 </div>
                 <div class="project-content">
-                    <!-- <div class="project-thumbnail slideshow">
-                        <div class="slideshow-container" ontouchmove="scrollSlides(3)" onscroll="scrollSlides(3)">
-                            <img class="slide" src="https://t6.rbxcdn.com/1af6a591802ad4e34cbcf67c26f1f63b">
-                            <img class="slide" src="./Assets/Thumbnails/TLoM2_Screenshot1.png">
-                            <img class="slide" src="./Assets/Thumbnails/TLoM2_Screenshot2.png">
-                            <img class="slide" src="./Assets/Thumbnails/TLoM2_Screenshot3.png">
+                    <div class="project-thumbnail slideshow">
+                        <div class="slideshow-container">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/TLoM2_Thumbnail.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/TLoM2_Screenshot1.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/TLoM2_Screenshot2.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/TLoM2_Screenshot3.png">
                         </div>
                         <div class="slideshow-buttons-container">
-                            <button class="slideshow-button slideshow-button-focus" onclick="showSlide(3, 0, true)"></button>
-                            <button class="slideshow-button" onclick="showSlide(3, 1, true)"></button>
-                            <button class="slideshow-button" onclick="showSlide(3, 2, true)"></button>
-                            <button class="slideshow-button" onclick="showSlide(3, 3, true)"></button>
+                            <button class="slide-button slide-button-focus"></button>
+                            <button class="slide-button"></button>
+                            <button class="slide-button"></button>
+                            <button class="slide-button"></button>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="project-description">
-                        <div class="project-tags">
-                            <div class="project-tag-paused"></div>
-                        </div>
                         <p>
-                            A sequel to my "The Legend of Zelda"-like game. It had a bigger world, more items, 
+                            A sequel to my game inspired by "The&nbsp;Legend&nbsp;of&nbsp;Zelda". It had a bigger world, more items, 
                             more temples; an improvement on all aspects, pretty much. Still, this was released in 
-                            early 2014, and like Max Adventure 3, it broke over time. I'm currently working on a
-                            revamp of it.
+                            early 2014, and like Max&nbsp;Adventure&nbsp;3, it broke over time. I plan to revamp it eventually.
                         </p>
                         <div class="project-links">
-                            <a class="action-button explore-button" href="https://www.roblox.com/games/170545797/Old-Games-Place" target="_blank">Explore</a>
+                            <a class="action-button explore-button" href="https://www.roblox.com/games/170545797/Old-Games-Place" target="_blank">Play</a>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <article class="project" id="project-farm">
+            <article class="project" id="project-old">
                 <div class="project-header">
                     <h3>... And a bunch more</h3>
                     <h4>2012-2013</h4>
                 </div>
                 <div class="project-content">
-                    <!-- <div class="project-thumbnail slideshow">
-                        <div class="slideshow-container" ontouchmove="scrollSlides(4)" onscroll="scrollSlides(4)">
-                            <img class="slide" src="./Assets/Thumbnails/TLoM_Thumbnail.png">
-                            <img class="slide" src="./Assets/Thumbnails/MA2_Thumbnail.png">
-                            <img class="slide" src="./Assets/Thumbnails/MZCM_Thumbnail.png">
+                    <div class="project-thumbnail slideshow">
+                        <div class="slideshow-container">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/TLoM_Thumbnail.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/MA2_Thumbnail.png">
+                            <img class="slide" src="./Assets/Thumbnails/Roblox/MZCM_Thumbnail.png">
                         </div>
                         <div class="slideshow-buttons-container">
-                            <button class="slideshow-button slideshow-button-focus" onclick="showSlide(4, 0, true)"></button>
-                            <button class="slideshow-button" onclick="showSlide(4, 1, true)"></button>
-                            <button class="slideshow-button" onclick="showSlide(4, 2, true)"></button>
+                            <button class="slide-button slide-button-focus"></button>
+                            <button class="slide-button"></button>
+                            <button class="slide-button"></button>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="project-description">
-                        <div class="project-tags">
-                            <div class="project-tag-paused"></div>
-                        </div>
                         <p>
-                            In 2012-2013, I released a bunch of games. Notably there's the original "The Legend of Max" 
-                            (Zelda-like game), "Max Adventure 2" (Mario-like game), the first "Max Adventure" 
-                            (a basic obstacle course), and three zombie survival games. I figured it's not worth 
-                            describing all of them since at this point each game is so small and unpolished. Still,
-                            if you wish to check them out, you can find them all gathered in my "Old Games Place".
+                            After joining Roblox in 2012, I quickly released a bunch of games. Notably there's the original 
+                            "The&nbsp;Legend&nbsp;of&nbsp;Max" (Zelda-like game), "Max&nbsp;Adventure&nbsp;2" (Mario-like game), 
+                            the first "Max&nbsp;Adventure" (a basic obstacle course), and three zombie survival games. 
+                            I figured it's not worth describing all of them since at this point each game is very small and unpolished. 
+                            Still, if you wish to check them out, you can find them all gathered in my "Old&nbsp;Games&nbsp;Place".
                         </p>
                         <div class="project-links">
-                            <a class="action-button explore-button" href="https://www.roblox.com/games/170545797/Old-Games-Place" target="_blank">Explore</a>
+                            <a class="action-button explore-button" href="https://www.roblox.com/games/170545797/Old-Games-Place" target="_blank">Play</a>
                         </div>
                     </div>
                 </div>
             </article>
 
+            <section id="up-next">
+                <h3>Up Next</h3>
+                <p>Ordered by priority. Hoping all these projects will come out before the end of 2024.</p>
+                <article>
+                    <h4>Revamp Max Adventure 3</h4>
+                    <p>Long overdue and highly requested. I won't just fix bugs. I will make the game multiplayer and polish gameplay elements.</p>
+                </article>
+                <article>
+                    <h4>Fix Old Games Place</h4>
+                    <p>I will make my older games compatible for mobile devices and fix game-breaking bugs.</p>
+                </article>
+                <article>
+                    <h4>Revamp / Finish Balloon Brawlers</h4>
+                    <p>Like everything else, the code will have to be reworked from scratch. But this should be a fairly simple project.</p>
+                </article>
+                <article>
+                    <h4>Revamp / Finish Deep Freeze</h4>
+                    <p>Thankfully this is pretty recent and mostly done. I just need to program enemies and tools.</p>
+                </article>
+                <article>
+                    <h4>Revamp The Legend of Max 2</h4>
+                    <p>I haven't worked on it for so long that I will need to "revamp" the revamp, lol. My goals for it are the same as Max&nbsp;Adventure&nbsp;3.</p>
+                </article>
+                <article>
+                    <h4>Telescope Simulator</h4>
+                    <p>A new quick project where players will be able to handle a telescope like in real life and discover objects in the sky.</p>
+                </article>
+                <article>
+                    <h4>Revamp / Finish Quad Quests</h4>
+                    <p>Finally, I want to return to this and make a full multiplayer adventure game. This will likely be my biggest project yet.</p>
+                </article>
+            </section>
+
             <section class="index-section" id="project-section">
-                <h3 class="index-section-title">Check Out My&nbsp;Projects!</h3>
+                <h3 class="index-section-title">Check Out My&nbsp;Other&nbsp;Projects!</h3>
                 <div class="project-grid">
                     <div class="project-container">
                         <a class="project-icon" id="project-proj-icon" href="./proj-code.html">Coding Projects</a>
@@ -270,8 +336,6 @@
     <footer>
         <div>Website built on my own</div>•<div>Reuse permitted</div>•<div>Last Updated: May 2023</div>
     </footer>
-
-    <script src="./slideshow.js"></script>
 </body>
 
 </html>
