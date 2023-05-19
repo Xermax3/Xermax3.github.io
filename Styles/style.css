@@ -89,6 +89,7 @@ button:focus { outline: none; }
 
 .slide {
     width: 102%;
+    min-width: 102%;
     object-fit: cover;
     scroll-snap-align: center;
     position: relative;
